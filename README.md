@@ -135,9 +135,9 @@ API documentation by Swagger: http://localhost:3000/api-docs
 Refer to [Development procedures, practices, and guidelines](./documentation/development/README.md) for detailed development procedures and guidelines.
 
 ### Needs Improvement
--UI design - did not spend time on the design itself due to time constraint.
--Loading list should use skeleton loader
--Tokens and other sensitive informations should be in .ENV file (better in server)
--Unit test - dont have enough time to add more
--Search functionality - users should have the capability to search for a specific string, and consider incorporating filtering options akin to Elastic Search for a more refined and efficient search experience..
+- UI design - did not spend time on the design itself due to time constraint.
+- Loading list should use skeleton loader
+- Tokens and other sensitive informations should be in .ENV file (better in server)
+- Unit test - dont have enough time to add more
+- Search functionality - users should have the capability to search for a specific string, and consider incorporating filtering options akin to Elastic Search for a more refined and efficient search experience..
 
