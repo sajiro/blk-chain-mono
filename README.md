@@ -71,10 +71,10 @@ For local development, you'll need to install and configure a local instance of 
 1. Create a new database named **mine**.
 1. Create the following collections in the **mine** database and use **Add Data > Import JSON or CSV** to import the indicated JSON file:
 
-   | Collection   | JSON                                            |
-   | ------------ | ----------------------------------------------- |
-   | **projects** | **apps\mine-service\data\miningHardwares.json** |
-   | **users**    | **apps\mine-service\data\users.json**           |
+   | Collection          | JSON                                            |
+   | ------------------- | ----------------------------------------------- |
+   | **mining hardware** | **apps\mine-service\data\miningHardwares.json** |
+   | **app users**       | **apps\mine-service\data\users.json**           |
 
 ---
 
