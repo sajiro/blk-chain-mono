@@ -2,8 +2,6 @@
 
 This document describes the steps required to fully set up the development environment.
 
-For details on deploying the application, refer to [MINE deployment](./documentation/deployment/README.md).
-
 **Table of Contents**
 
 - [Environment setup](#environment-setup)
