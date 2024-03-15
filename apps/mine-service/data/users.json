@@ -1,0 +1,27 @@
+[
+  
+  {
+    "_id": {
+      "$oid": "646280abf8e35f057bf00453"
+    },
+    "firstName": "Erwin",
+    "lastName": "joseph",
+    "email": "erwin@gmail.com",
+    "passwordHash": "$2a$10$oBxOUOgqzV7Fw9eeeNcPwObaIcJF2Y91ik3RMAQhbDUOS0Ief7IWS",
+    "role": "admin",
+    "status": "enabled"
+  },
+  
+
+  {
+    "_id": {
+      "$oid": "64e79609069ebfe32c54a49f"
+    },
+    "firstName": "mine",
+    "lastName": "Admin",
+    "email": "admin@gmail.com",
+    "passwordHash": "$2a$10$oBxOUOgqzV7Fw9eeeNcPwObaIcJF2Y91ik3RMAQhbDUOS0Ief7IWS",
+    "role": "admin",
+    "status": "enabled"
+  }
+]

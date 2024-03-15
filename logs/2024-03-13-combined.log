@@ -1,0 +1,663 @@
+2024-03-13T16:16:48.483Z [NestFactory] info: Starting Nest application...
+2024-03-13T16:16:48.486Z [ModuleTokenFactory] warn: The module "InternalCoreModule" is taking 157.29ms to serialize, this may be caused by larger objects statically assigned to the module. More details: https://github.com/nestjs/nest/issues/12738
+2024-03-13T16:16:48.487Z [ModuleTokenFactory] warn: The module "MongooseModule" is taking 14.57ms to serialize, this may be caused by larger objects statically assigned to the module. More details: https://github.com/nestjs/nest/issues/12738
+2024-03-13T16:16:48.487Z [InstanceLoader] info: AppModule dependencies initialized
+2024-03-13T16:16:48.489Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T16:16:48.489Z [InstanceLoader] info: ConfigHostModule dependencies initialized
+2024-03-13T16:16:48.490Z [InstanceLoader] info: ConfigModule dependencies initialized
+2024-03-13T16:16:48.491Z [InstanceLoader] info: JwtModule dependencies initialized
+2024-03-13T16:16:48.503Z [InstanceLoader] info: HealthModule dependencies initialized
+2024-03-13T16:16:48.506Z [InstanceLoader] info: WinstonModule dependencies initialized
+2024-03-13T16:16:48.506Z [InstanceLoader] info: MongooseCoreModule dependencies initialized
+2024-03-13T16:16:48.507Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T16:16:48.507Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T16:16:48.507Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T16:16:48.508Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T16:16:48.769Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T16:16:48.770Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T16:16:48.770Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T16:16:48.771Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T16:16:48.772Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T16:16:48.773Z [InstanceLoader] info: FeatureFlagsModule dependencies initialized
+2024-03-13T16:16:48.774Z [InstanceLoader] info: MiningHardwaresModule dependencies initialized
+2024-03-13T16:16:48.774Z [InstanceLoader] info: ClientsModule dependencies initialized
+2024-03-13T16:16:48.774Z [InstanceLoader] info: AuthModule dependencies initialized
+2024-03-13T16:16:48.777Z [InstanceLoader] info: ProjectsModule dependencies initialized
+2024-03-13T16:16:48.777Z [InstanceLoader] info: UserModule dependencies initialized
+2024-03-13T16:16:48.778Z [InstanceLoader] info: ActivitiesModule dependencies initialized
+2024-03-13T16:16:48.778Z [InstanceLoader] info: UsersModule dependencies initialized
+2024-03-13T16:16:48.778Z [InstanceLoader] info: ReportsModule dependencies initialized
+2024-03-13T16:16:48.779Z [RoutesResolver] info: ActivitiesController {/activities}:
+2024-03-13T16:16:48.780Z [RouterExplorer] info: Mapped {/activities, GET} route
+2024-03-13T16:16:48.781Z [RouterExplorer] info: Mapped {/activities, POST} route
+2024-03-13T16:16:48.785Z [RouterExplorer] info: Mapped {/activities/:activityId, PATCH} route
+2024-03-13T16:16:48.786Z [RouterExplorer] info: Mapped {/activities/:activityId, DELETE} route
+2024-03-13T16:16:48.787Z [RoutesResolver] info: AuthController {/auth}:
+2024-03-13T16:16:48.787Z [RouterExplorer] info: Mapped {/auth/login, POST} route
+2024-03-13T16:16:48.787Z [RouterExplorer] info: Mapped {/auth/refresh, POST} route
+2024-03-13T16:16:48.787Z [RouterExplorer] info: Mapped {/auth/logout, POST} route
+2024-03-13T16:16:48.787Z [RoutesResolver] info: ProjectsController {/projects}:
+2024-03-13T16:16:48.788Z [RouterExplorer] info: Mapped {/projects, GET} route
+2024-03-13T16:16:48.788Z [RouterExplorer] info: Mapped {/projects, POST} route
+2024-03-13T16:16:48.788Z [RouterExplorer] info: Mapped {/projects/:projectId, PATCH} route
+2024-03-13T16:16:48.788Z [RouterExplorer] info: Mapped {/projects/:projectId, DELETE} route
+2024-03-13T16:16:48.788Z [RoutesResolver] info: ClientsController {/clients}:
+2024-03-13T16:16:48.788Z [RouterExplorer] info: Mapped {/clients, GET} route
+2024-03-13T16:16:48.788Z [RouterExplorer] info: Mapped {/clients, POST} route
+2024-03-13T16:16:48.788Z [RouterExplorer] info: Mapped {/clients/:clientId, PATCH} route
+2024-03-13T16:16:48.789Z [RouterExplorer] info: Mapped {/clients/:clientId, DELETE} route
+2024-03-13T16:16:48.789Z [RoutesResolver] info: FeatureFlagsController {/feature-flags}:
+2024-03-13T16:16:48.810Z [RouterExplorer] info: Mapped {/feature-flags, GET} route
+2024-03-13T16:16:48.811Z [RouterExplorer] info: Mapped {/feature-flags, POST} route
+2024-03-13T16:16:48.811Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, PATCH} route
+2024-03-13T16:16:48.813Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, DELETE} route
+2024-03-13T16:16:48.813Z [RoutesResolver] info: HealthController {/health}:
+2024-03-13T16:16:48.813Z [RouterExplorer] info: Mapped {/health/hello, GET} route
+2024-03-13T16:16:48.814Z [RoutesResolver] info: ReportsController {/reports}:
+2024-03-13T16:16:48.814Z [RouterExplorer] info: Mapped {/reports/timesheet-summaries, GET} route
+2024-03-13T16:16:48.817Z [RoutesResolver] info: UsersController {/users}:
+2024-03-13T16:16:48.817Z [RouterExplorer] info: Mapped {/users, GET} route
+2024-03-13T16:16:48.818Z [RouterExplorer] info: Mapped {/users/:userId, GET} route
+2024-03-13T16:16:48.821Z [RouterExplorer] info: Mapped {/users, POST} route
+2024-03-13T16:16:48.833Z [RouterExplorer] info: Mapped {/users/:userId/status, PUT} route
+2024-03-13T16:16:48.833Z [RouterExplorer] info: Mapped {/users/:userId/password, PUT} route
+2024-03-13T16:16:48.836Z [RouterExplorer] info: Mapped {/users/:userId/activities, PATCH} route
+2024-03-13T16:16:48.836Z [RoutesResolver] info: UserController {/user}:
+2024-03-13T16:16:48.836Z [RouterExplorer] info: Mapped {/user, GET} route
+2024-03-13T16:16:48.837Z [RouterExplorer] info: Mapped {/user/timesheet-events, GET} route
+2024-03-13T16:16:48.837Z [RouterExplorer] info: Mapped {/user/timesheet-events, POST} route
+2024-03-13T16:16:48.837Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, PUT} route
+2024-03-13T16:16:48.837Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, DELETE} route
+2024-03-13T16:16:48.837Z [RouterExplorer] info: Mapped {/user/work-summaries, GET} route
+2024-03-13T16:16:48.838Z [RouterExplorer] info: Mapped {/user/work-summaries, POST} route
+2024-03-13T16:16:48.838Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, PATCH} route
+2024-03-13T16:16:48.838Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, DELETE} route
+2024-03-13T16:16:48.839Z [RouterExplorer] info: Mapped {/user/password, PUT} route
+2024-03-13T16:16:48.839Z [RoutesResolver] info: MiningHardwaresController {/mining-hardwares}:
+2024-03-13T16:16:48.839Z [RouterExplorer] info: Mapped {/mining-hardwares, GET} route
+2024-03-13T16:16:48.839Z [RouterExplorer] info: Mapped {/mining-hardwares, POST} route
+2024-03-13T16:16:48.839Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, PATCH} route
+2024-03-13T16:16:48.840Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, DELETE} route
+2024-03-13T16:16:48.848Z [NestApplication] info: Nest application successfully started
+2024-03-13T16:17:32.684Z [NestFactory] info: Starting Nest application...
+2024-03-13T16:17:32.881Z [InstanceLoader] info: AppModule dependencies initialized
+2024-03-13T16:17:32.882Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T16:17:32.883Z [InstanceLoader] info: ConfigHostModule dependencies initialized
+2024-03-13T16:17:32.883Z [InstanceLoader] info: ConfigModule dependencies initialized
+2024-03-13T16:17:32.884Z [InstanceLoader] info: JwtModule dependencies initialized
+2024-03-13T16:17:32.885Z [InstanceLoader] info: HealthModule dependencies initialized
+2024-03-13T16:17:32.886Z [InstanceLoader] info: WinstonModule dependencies initialized
+2024-03-13T16:17:32.886Z [InstanceLoader] info: MongooseCoreModule dependencies initialized
+2024-03-13T16:17:32.892Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T16:17:32.893Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T16:17:32.898Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T16:17:32.900Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T16:17:32.901Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T16:17:32.902Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T16:17:32.903Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T16:17:32.906Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T16:17:32.906Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T16:17:32.909Z [InstanceLoader] info: FeatureFlagsModule dependencies initialized
+2024-03-13T16:17:32.916Z [InstanceLoader] info: MiningHardwaresModule dependencies initialized
+2024-03-13T16:17:32.918Z [InstanceLoader] info: ClientsModule dependencies initialized
+2024-03-13T16:17:32.919Z [InstanceLoader] info: AuthModule dependencies initialized
+2024-03-13T16:17:32.919Z [InstanceLoader] info: ProjectsModule dependencies initialized
+2024-03-13T16:17:32.922Z [InstanceLoader] info: UserModule dependencies initialized
+2024-03-13T16:17:33.006Z [InstanceLoader] info: ActivitiesModule dependencies initialized
+2024-03-13T16:17:33.019Z [InstanceLoader] info: UsersModule dependencies initialized
+2024-03-13T16:17:33.020Z [InstanceLoader] info: ReportsModule dependencies initialized
+2024-03-13T16:17:33.030Z [RoutesResolver] info: ActivitiesController {/activities}:
+2024-03-13T16:17:33.030Z [RouterExplorer] info: Mapped {/activities, GET} route
+2024-03-13T16:17:33.030Z [RouterExplorer] info: Mapped {/activities, POST} route
+2024-03-13T16:17:33.031Z [RouterExplorer] info: Mapped {/activities/:activityId, PATCH} route
+2024-03-13T16:17:33.033Z [RouterExplorer] info: Mapped {/activities/:activityId, DELETE} route
+2024-03-13T16:17:33.038Z [RoutesResolver] info: AuthController {/auth}:
+2024-03-13T16:17:33.060Z [RouterExplorer] info: Mapped {/auth/login, POST} route
+2024-03-13T16:17:33.061Z [RouterExplorer] info: Mapped {/auth/refresh, POST} route
+2024-03-13T16:17:33.061Z [RouterExplorer] info: Mapped {/auth/logout, POST} route
+2024-03-13T16:17:33.062Z [RoutesResolver] info: ProjectsController {/projects}:
+2024-03-13T16:17:33.062Z [RouterExplorer] info: Mapped {/projects, GET} route
+2024-03-13T16:17:33.064Z [RouterExplorer] info: Mapped {/projects, POST} route
+2024-03-13T16:17:33.064Z [RouterExplorer] info: Mapped {/projects/:projectId, PATCH} route
+2024-03-13T16:17:33.065Z [RouterExplorer] info: Mapped {/projects/:projectId, DELETE} route
+2024-03-13T16:17:33.065Z [RoutesResolver] info: ClientsController {/clients}:
+2024-03-13T16:17:33.066Z [RouterExplorer] info: Mapped {/clients, GET} route
+2024-03-13T16:17:33.066Z [RouterExplorer] info: Mapped {/clients, POST} route
+2024-03-13T16:17:33.067Z [RouterExplorer] info: Mapped {/clients/:clientId, PATCH} route
+2024-03-13T16:17:33.067Z [RouterExplorer] info: Mapped {/clients/:clientId, DELETE} route
+2024-03-13T16:17:33.067Z [RoutesResolver] info: FeatureFlagsController {/feature-flags}:
+2024-03-13T16:17:33.067Z [RouterExplorer] info: Mapped {/feature-flags, GET} route
+2024-03-13T16:17:33.067Z [RouterExplorer] info: Mapped {/feature-flags, POST} route
+2024-03-13T16:17:33.068Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, PATCH} route
+2024-03-13T16:17:33.068Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, DELETE} route
+2024-03-13T16:17:33.068Z [RoutesResolver] info: HealthController {/health}:
+2024-03-13T16:17:33.068Z [RouterExplorer] info: Mapped {/health/hello, GET} route
+2024-03-13T16:17:33.068Z [RoutesResolver] info: ReportsController {/reports}:
+2024-03-13T16:17:33.069Z [RouterExplorer] info: Mapped {/reports/timesheet-summaries, GET} route
+2024-03-13T16:17:33.069Z [RoutesResolver] info: UsersController {/users}:
+2024-03-13T16:17:33.069Z [RouterExplorer] info: Mapped {/users, GET} route
+2024-03-13T16:17:33.069Z [RouterExplorer] info: Mapped {/users/:userId, GET} route
+2024-03-13T16:17:33.069Z [RouterExplorer] info: Mapped {/users, POST} route
+2024-03-13T16:17:33.069Z [RouterExplorer] info: Mapped {/users/:userId/status, PUT} route
+2024-03-13T16:17:33.069Z [RouterExplorer] info: Mapped {/users/:userId/password, PUT} route
+2024-03-13T16:17:33.069Z [RouterExplorer] info: Mapped {/users/:userId/activities, PATCH} route
+2024-03-13T16:17:33.070Z [RoutesResolver] info: UserController {/user}:
+2024-03-13T16:17:33.070Z [RouterExplorer] info: Mapped {/user, GET} route
+2024-03-13T16:17:33.070Z [RouterExplorer] info: Mapped {/user/timesheet-events, GET} route
+2024-03-13T16:17:33.070Z [RouterExplorer] info: Mapped {/user/timesheet-events, POST} route
+2024-03-13T16:17:33.070Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, PUT} route
+2024-03-13T16:17:33.070Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, DELETE} route
+2024-03-13T16:17:33.071Z [RouterExplorer] info: Mapped {/user/work-summaries, GET} route
+2024-03-13T16:17:33.071Z [RouterExplorer] info: Mapped {/user/work-summaries, POST} route
+2024-03-13T16:17:33.071Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, PATCH} route
+2024-03-13T16:17:33.072Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, DELETE} route
+2024-03-13T16:17:33.073Z [RouterExplorer] info: Mapped {/user/password, PUT} route
+2024-03-13T16:17:33.074Z [RoutesResolver] info: MiningHardwaresController {/mining-hardwares}:
+2024-03-13T16:17:33.075Z [RouterExplorer] info: Mapped {/mining-hardwares, GET} route
+2024-03-13T16:17:33.078Z [RouterExplorer] info: Mapped {/mining-hardwares, POST} route
+2024-03-13T16:17:33.079Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, PATCH} route
+2024-03-13T16:17:33.079Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, DELETE} route
+2024-03-13T16:17:33.080Z [NestApplication] info: Nest application successfully started
+2024-03-13T16:50:09.194Z [NestFactory] info: Starting Nest application...
+2024-03-13T16:50:09.197Z [InstanceLoader] info: AppModule dependencies initialized
+2024-03-13T16:50:09.225Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T16:50:09.227Z [InstanceLoader] info: ConfigHostModule dependencies initialized
+2024-03-13T16:50:09.228Z [InstanceLoader] info: ConfigModule dependencies initialized
+2024-03-13T16:50:09.228Z [InstanceLoader] info: JwtModule dependencies initialized
+2024-03-13T16:50:09.229Z [InstanceLoader] info: HealthModule dependencies initialized
+2024-03-13T16:50:09.230Z [InstanceLoader] info: WinstonModule dependencies initialized
+2024-03-13T16:50:09.232Z [InstanceLoader] info: MongooseCoreModule dependencies initialized
+2024-03-13T16:50:09.232Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T16:50:09.233Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T16:50:09.233Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T16:50:09.234Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T16:50:09.235Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T16:50:09.237Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T16:50:09.238Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T16:50:09.238Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T16:50:09.238Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T16:50:09.239Z [InstanceLoader] info: FeatureFlagsModule dependencies initialized
+2024-03-13T16:50:09.246Z [InstanceLoader] info: MiningHardwaresModule dependencies initialized
+2024-03-13T16:50:09.246Z [InstanceLoader] info: ClientsModule dependencies initialized
+2024-03-13T16:50:09.247Z [InstanceLoader] info: AuthModule dependencies initialized
+2024-03-13T16:50:09.247Z [InstanceLoader] info: ProjectsModule dependencies initialized
+2024-03-13T16:50:09.250Z [InstanceLoader] info: UserModule dependencies initialized
+2024-03-13T16:50:09.251Z [InstanceLoader] info: ActivitiesModule dependencies initialized
+2024-03-13T16:50:09.251Z [InstanceLoader] info: UsersModule dependencies initialized
+2024-03-13T16:50:09.252Z [InstanceLoader] info: ReportsModule dependencies initialized
+2024-03-13T16:50:09.252Z [RoutesResolver] info: ActivitiesController {/activities}:
+2024-03-13T16:50:09.256Z [RouterExplorer] info: Mapped {/activities, GET} route
+2024-03-13T16:50:09.257Z [RouterExplorer] info: Mapped {/activities, POST} route
+2024-03-13T16:50:09.257Z [RouterExplorer] info: Mapped {/activities/:activityId, PATCH} route
+2024-03-13T16:50:09.260Z [RouterExplorer] info: Mapped {/activities/:activityId, DELETE} route
+2024-03-13T16:50:09.261Z [RoutesResolver] info: AuthController {/auth}:
+2024-03-13T16:50:09.261Z [RouterExplorer] info: Mapped {/auth/login, POST} route
+2024-03-13T16:50:09.261Z [RouterExplorer] info: Mapped {/auth/refresh, POST} route
+2024-03-13T16:50:09.262Z [RouterExplorer] info: Mapped {/auth/logout, POST} route
+2024-03-13T16:50:09.262Z [RoutesResolver] info: ProjectsController {/projects}:
+2024-03-13T16:50:09.263Z [RouterExplorer] info: Mapped {/projects, GET} route
+2024-03-13T16:50:09.263Z [RouterExplorer] info: Mapped {/projects, POST} route
+2024-03-13T16:50:09.263Z [RouterExplorer] info: Mapped {/projects/:projectId, PATCH} route
+2024-03-13T16:50:09.263Z [RouterExplorer] info: Mapped {/projects/:projectId, DELETE} route
+2024-03-13T16:50:09.263Z [RoutesResolver] info: ClientsController {/clients}:
+2024-03-13T16:50:09.263Z [RouterExplorer] info: Mapped {/clients, GET} route
+2024-03-13T16:50:09.264Z [RouterExplorer] info: Mapped {/clients, POST} route
+2024-03-13T16:50:09.264Z [RouterExplorer] info: Mapped {/clients/:clientId, PATCH} route
+2024-03-13T16:50:09.264Z [RouterExplorer] info: Mapped {/clients/:clientId, DELETE} route
+2024-03-13T16:50:09.265Z [RoutesResolver] info: FeatureFlagsController {/feature-flags}:
+2024-03-13T16:50:09.265Z [RouterExplorer] info: Mapped {/feature-flags, GET} route
+2024-03-13T16:50:09.265Z [RouterExplorer] info: Mapped {/feature-flags, POST} route
+2024-03-13T16:50:09.266Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, PATCH} route
+2024-03-13T16:50:09.266Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, DELETE} route
+2024-03-13T16:50:09.267Z [RoutesResolver] info: HealthController {/health}:
+2024-03-13T16:50:09.267Z [RouterExplorer] info: Mapped {/health/hello, GET} route
+2024-03-13T16:50:09.268Z [RoutesResolver] info: ReportsController {/reports}:
+2024-03-13T16:50:09.268Z [RouterExplorer] info: Mapped {/reports/timesheet-summaries, GET} route
+2024-03-13T16:50:09.268Z [RoutesResolver] info: UsersController {/users}:
+2024-03-13T16:50:09.268Z [RouterExplorer] info: Mapped {/users, GET} route
+2024-03-13T16:50:09.269Z [RouterExplorer] info: Mapped {/users/:userId, GET} route
+2024-03-13T16:50:09.269Z [RouterExplorer] info: Mapped {/users, POST} route
+2024-03-13T16:50:09.269Z [RouterExplorer] info: Mapped {/users/:userId/status, PUT} route
+2024-03-13T16:50:09.269Z [RouterExplorer] info: Mapped {/users/:userId/password, PUT} route
+2024-03-13T16:50:09.270Z [RouterExplorer] info: Mapped {/users/:userId/activities, PATCH} route
+2024-03-13T16:50:09.270Z [RoutesResolver] info: UserController {/user}:
+2024-03-13T16:50:09.270Z [RouterExplorer] info: Mapped {/user, GET} route
+2024-03-13T16:50:09.270Z [RouterExplorer] info: Mapped {/user/timesheet-events, GET} route
+2024-03-13T16:50:09.270Z [RouterExplorer] info: Mapped {/user/timesheet-events, POST} route
+2024-03-13T16:50:09.270Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, PUT} route
+2024-03-13T16:50:09.270Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, DELETE} route
+2024-03-13T16:50:09.270Z [RouterExplorer] info: Mapped {/user/work-summaries, GET} route
+2024-03-13T16:50:09.270Z [RouterExplorer] info: Mapped {/user/work-summaries, POST} route
+2024-03-13T16:50:09.270Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, PATCH} route
+2024-03-13T16:50:09.271Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, DELETE} route
+2024-03-13T16:50:09.272Z [RouterExplorer] info: Mapped {/user/password, PUT} route
+2024-03-13T16:50:09.272Z [RoutesResolver] info: MiningHardwaresController {/mining-hardwares}:
+2024-03-13T16:50:09.273Z [RouterExplorer] info: Mapped {/mining-hardwares, GET} route
+2024-03-13T16:50:09.273Z [RouterExplorer] info: Mapped {/mining-hardwares, POST} route
+2024-03-13T16:50:09.273Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, PATCH} route
+2024-03-13T16:50:09.273Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, DELETE} route
+2024-03-13T16:50:09.274Z [NestApplication] info: Nest application successfully started
+2024-03-13T17:05:26.135Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-13T17:22:34.396Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-13T17:43:51.955Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-13T20:42:51.771Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-13T20:43:12.934Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-13T20:43:13.317Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T20:46:08.818Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-13T20:46:09.496Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T20:46:25.577Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T20:47:26.640Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-13T20:47:26.741Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T20:47:31.581Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T20:48:04.447Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-13T20:48:04.856Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T20:48:27.228Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T20:49:41.245Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T20:49:46.581Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T20:50:27.838Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-13T20:50:27.992Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T20:50:32.473Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T20:54:08.603Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T20:54:35.276Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T20:55:09.298Z [HTTP] info: GET /mining-hardwares; body: {} - 200, undefined
+2024-03-13T20:55:10.117Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-13T20:55:13.659Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T20:55:39.063Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-13T20:55:39.303Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T21:06:46.714Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T21:06:51.425Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T21:10:05.816Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T21:10:32.779Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T21:10:35.034Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T21:10:39.954Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T21:11:02.241Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T21:13:08.833Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T21:13:49.959Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T21:13:53.828Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T21:14:01.640Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T21:15:48.528Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T21:19:12.360Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T21:19:55.188Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T21:20:20.875Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T21:22:04.163Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T21:23:48.930Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T21:24:47.452Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-13T21:24:47.636Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T21:24:50.693Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-13T21:24:50.798Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T21:25:50.193Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T21:26:03.274Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T21:33:08.970Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T21:33:11.798Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-13T21:33:11.975Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T21:33:37.732Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T21:37:32.515Z [HTTP] info: GET /mining-hardwares; body: {} - 200, undefined
+2024-03-13T21:37:56.561Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-13T22:20:05.004Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T22:20:47.136Z [NestFactory] info: Starting Nest application...
+2024-03-13T22:20:47.153Z [InstanceLoader] info: AppModule dependencies initialized
+2024-03-13T22:20:47.281Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T22:20:47.282Z [InstanceLoader] info: ConfigHostModule dependencies initialized
+2024-03-13T22:20:47.283Z [InstanceLoader] info: ConfigModule dependencies initialized
+2024-03-13T22:20:47.283Z [InstanceLoader] info: JwtModule dependencies initialized
+2024-03-13T22:20:47.283Z [InstanceLoader] info: HealthModule dependencies initialized
+2024-03-13T22:20:47.284Z [InstanceLoader] info: WinstonModule dependencies initialized
+2024-03-13T22:20:47.285Z [InstanceLoader] info: MongooseCoreModule dependencies initialized
+2024-03-13T22:20:47.286Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T22:20:47.286Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T22:20:47.287Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T22:20:47.287Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T22:20:47.287Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T22:20:47.287Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T22:20:47.288Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T22:20:47.288Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T22:20:47.288Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T22:20:47.288Z [InstanceLoader] info: FeatureFlagsModule dependencies initialized
+2024-03-13T22:20:47.289Z [InstanceLoader] info: MiningHardwaresModule dependencies initialized
+2024-03-13T22:20:47.289Z [InstanceLoader] info: ClientsModule dependencies initialized
+2024-03-13T22:20:47.289Z [InstanceLoader] info: AuthModule dependencies initialized
+2024-03-13T22:20:47.289Z [InstanceLoader] info: ProjectsModule dependencies initialized
+2024-03-13T22:20:47.290Z [InstanceLoader] info: UserModule dependencies initialized
+2024-03-13T22:20:47.290Z [InstanceLoader] info: ActivitiesModule dependencies initialized
+2024-03-13T22:20:47.290Z [InstanceLoader] info: UsersModule dependencies initialized
+2024-03-13T22:20:47.291Z [InstanceLoader] info: ReportsModule dependencies initialized
+2024-03-13T22:20:47.293Z [RoutesResolver] info: ActivitiesController {/activities}:
+2024-03-13T22:20:47.293Z [RouterExplorer] info: Mapped {/activities, GET} route
+2024-03-13T22:20:47.294Z [RouterExplorer] info: Mapped {/activities, POST} route
+2024-03-13T22:20:47.295Z [RouterExplorer] info: Mapped {/activities/:activityId, PATCH} route
+2024-03-13T22:20:47.295Z [RouterExplorer] info: Mapped {/activities/:activityId, DELETE} route
+2024-03-13T22:20:47.295Z [RoutesResolver] info: AuthController {/auth}:
+2024-03-13T22:20:47.295Z [RouterExplorer] info: Mapped {/auth/login, POST} route
+2024-03-13T22:20:47.295Z [RouterExplorer] info: Mapped {/auth/refresh, POST} route
+2024-03-13T22:20:47.298Z [RouterExplorer] info: Mapped {/auth/logout, POST} route
+2024-03-13T22:20:47.299Z [RoutesResolver] info: ProjectsController {/projects}:
+2024-03-13T22:20:47.299Z [RouterExplorer] info: Mapped {/projects, GET} route
+2024-03-13T22:20:47.300Z [RouterExplorer] info: Mapped {/projects, POST} route
+2024-03-13T22:20:47.300Z [RouterExplorer] info: Mapped {/projects/:projectId, PATCH} route
+2024-03-13T22:20:47.300Z [RouterExplorer] info: Mapped {/projects/:projectId, DELETE} route
+2024-03-13T22:20:47.300Z [RoutesResolver] info: ClientsController {/clients}:
+2024-03-13T22:20:47.300Z [RouterExplorer] info: Mapped {/clients, GET} route
+2024-03-13T22:20:47.301Z [RouterExplorer] info: Mapped {/clients, POST} route
+2024-03-13T22:20:47.301Z [RouterExplorer] info: Mapped {/clients/:clientId, PATCH} route
+2024-03-13T22:20:47.302Z [RouterExplorer] info: Mapped {/clients/:clientId, DELETE} route
+2024-03-13T22:20:47.302Z [RoutesResolver] info: FeatureFlagsController {/feature-flags}:
+2024-03-13T22:20:47.302Z [RouterExplorer] info: Mapped {/feature-flags, GET} route
+2024-03-13T22:20:47.303Z [RouterExplorer] info: Mapped {/feature-flags, POST} route
+2024-03-13T22:20:47.303Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, PATCH} route
+2024-03-13T22:20:47.303Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, DELETE} route
+2024-03-13T22:20:47.303Z [RoutesResolver] info: HealthController {/health}:
+2024-03-13T22:20:47.303Z [RouterExplorer] info: Mapped {/health/hello, GET} route
+2024-03-13T22:20:47.303Z [RoutesResolver] info: ReportsController {/reports}:
+2024-03-13T22:20:47.303Z [RouterExplorer] info: Mapped {/reports/timesheet-summaries, GET} route
+2024-03-13T22:20:47.304Z [RoutesResolver] info: UsersController {/users}:
+2024-03-13T22:20:47.304Z [RouterExplorer] info: Mapped {/users, GET} route
+2024-03-13T22:20:47.304Z [RouterExplorer] info: Mapped {/users/:userId, GET} route
+2024-03-13T22:20:47.304Z [RouterExplorer] info: Mapped {/users, POST} route
+2024-03-13T22:20:47.304Z [RouterExplorer] info: Mapped {/users/:userId/status, PUT} route
+2024-03-13T22:20:47.304Z [RouterExplorer] info: Mapped {/users/:userId/password, PUT} route
+2024-03-13T22:20:47.304Z [RouterExplorer] info: Mapped {/users/:userId/activities, PATCH} route
+2024-03-13T22:20:47.304Z [RoutesResolver] info: UserController {/user}:
+2024-03-13T22:20:47.304Z [RouterExplorer] info: Mapped {/user, GET} route
+2024-03-13T22:20:47.305Z [RouterExplorer] info: Mapped {/user/timesheet-events, GET} route
+2024-03-13T22:20:47.305Z [RouterExplorer] info: Mapped {/user/timesheet-events, POST} route
+2024-03-13T22:20:47.305Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, PUT} route
+2024-03-13T22:20:47.306Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, DELETE} route
+2024-03-13T22:20:47.306Z [RouterExplorer] info: Mapped {/user/work-summaries, GET} route
+2024-03-13T22:20:47.306Z [RouterExplorer] info: Mapped {/user/work-summaries, POST} route
+2024-03-13T22:20:47.306Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, PATCH} route
+2024-03-13T22:20:47.306Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, DELETE} route
+2024-03-13T22:20:47.306Z [RouterExplorer] info: Mapped {/user/password, PUT} route
+2024-03-13T22:20:47.307Z [RoutesResolver] info: MiningHardwaresController {/mining-hardwares}:
+2024-03-13T22:20:47.307Z [RouterExplorer] info: Mapped {/mining-hardwares, GET} route
+2024-03-13T22:20:47.307Z [RouterExplorer] info: Mapped {/mining-hardwares, POST} route
+2024-03-13T22:20:47.307Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, PATCH} route
+2024-03-13T22:20:47.307Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, DELETE} route
+2024-03-13T22:20:47.307Z [NestApplication] info: Nest application successfully started
+2024-03-13T22:21:32.763Z [NestFactory] info: Starting Nest application...
+2024-03-13T22:21:32.771Z [InstanceLoader] info: AppModule dependencies initialized
+2024-03-13T22:21:32.780Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T22:21:32.783Z [InstanceLoader] info: ConfigHostModule dependencies initialized
+2024-03-13T22:21:32.785Z [InstanceLoader] info: ConfigModule dependencies initialized
+2024-03-13T22:21:32.788Z [InstanceLoader] info: JwtModule dependencies initialized
+2024-03-13T22:21:32.789Z [InstanceLoader] info: HealthModule dependencies initialized
+2024-03-13T22:21:32.792Z [InstanceLoader] info: WinstonModule dependencies initialized
+2024-03-13T22:21:32.796Z [InstanceLoader] info: MongooseCoreModule dependencies initialized
+2024-03-13T22:21:32.801Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T22:21:32.805Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T22:21:32.819Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T22:21:32.820Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T22:21:32.821Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T22:21:32.821Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T22:21:32.821Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T22:21:32.822Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T22:21:32.822Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-13T22:21:32.823Z [InstanceLoader] info: FeatureFlagsModule dependencies initialized
+2024-03-13T22:21:32.824Z [InstanceLoader] info: MiningHardwaresModule dependencies initialized
+2024-03-13T22:21:32.827Z [InstanceLoader] info: ClientsModule dependencies initialized
+2024-03-13T22:21:32.827Z [InstanceLoader] info: AuthModule dependencies initialized
+2024-03-13T22:21:32.828Z [InstanceLoader] info: ProjectsModule dependencies initialized
+2024-03-13T22:21:32.828Z [InstanceLoader] info: UserModule dependencies initialized
+2024-03-13T22:21:32.830Z [InstanceLoader] info: ActivitiesModule dependencies initialized
+2024-03-13T22:21:32.834Z [InstanceLoader] info: UsersModule dependencies initialized
+2024-03-13T22:21:32.839Z [InstanceLoader] info: ReportsModule dependencies initialized
+2024-03-13T22:21:32.839Z [RoutesResolver] info: ActivitiesController {/activities}:
+2024-03-13T22:21:32.840Z [RouterExplorer] info: Mapped {/activities, GET} route
+2024-03-13T22:21:32.840Z [RouterExplorer] info: Mapped {/activities, POST} route
+2024-03-13T22:21:32.842Z [RouterExplorer] info: Mapped {/activities/:activityId, PATCH} route
+2024-03-13T22:21:32.843Z [RouterExplorer] info: Mapped {/activities/:activityId, DELETE} route
+2024-03-13T22:21:32.843Z [RoutesResolver] info: AuthController {/auth}:
+2024-03-13T22:21:32.844Z [RouterExplorer] info: Mapped {/auth/login, POST} route
+2024-03-13T22:21:32.846Z [RouterExplorer] info: Mapped {/auth/refresh, POST} route
+2024-03-13T22:21:32.847Z [RouterExplorer] info: Mapped {/auth/logout, POST} route
+2024-03-13T22:21:32.847Z [RoutesResolver] info: ProjectsController {/projects}:
+2024-03-13T22:21:32.848Z [RouterExplorer] info: Mapped {/projects, GET} route
+2024-03-13T22:21:32.848Z [RouterExplorer] info: Mapped {/projects, POST} route
+2024-03-13T22:21:32.848Z [RouterExplorer] info: Mapped {/projects/:projectId, PATCH} route
+2024-03-13T22:21:32.849Z [RouterExplorer] info: Mapped {/projects/:projectId, DELETE} route
+2024-03-13T22:21:32.849Z [RoutesResolver] info: ClientsController {/clients}:
+2024-03-13T22:21:32.849Z [RouterExplorer] info: Mapped {/clients, GET} route
+2024-03-13T22:21:32.850Z [RouterExplorer] info: Mapped {/clients, POST} route
+2024-03-13T22:21:32.850Z [RouterExplorer] info: Mapped {/clients/:clientId, PATCH} route
+2024-03-13T22:21:32.850Z [RouterExplorer] info: Mapped {/clients/:clientId, DELETE} route
+2024-03-13T22:21:32.850Z [RoutesResolver] info: FeatureFlagsController {/feature-flags}:
+2024-03-13T22:21:32.851Z [RouterExplorer] info: Mapped {/feature-flags, GET} route
+2024-03-13T22:21:32.859Z [RouterExplorer] info: Mapped {/feature-flags, POST} route
+2024-03-13T22:21:32.859Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, PATCH} route
+2024-03-13T22:21:32.859Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, DELETE} route
+2024-03-13T22:21:32.860Z [RoutesResolver] info: HealthController {/health}:
+2024-03-13T22:21:32.860Z [RouterExplorer] info: Mapped {/health/hello, GET} route
+2024-03-13T22:21:32.860Z [RoutesResolver] info: ReportsController {/reports}:
+2024-03-13T22:21:32.860Z [RouterExplorer] info: Mapped {/reports/timesheet-summaries, GET} route
+2024-03-13T22:21:32.860Z [RoutesResolver] info: UsersController {/users}:
+2024-03-13T22:21:32.860Z [RouterExplorer] info: Mapped {/users, GET} route
+2024-03-13T22:21:32.860Z [RouterExplorer] info: Mapped {/users/:userId, GET} route
+2024-03-13T22:21:32.860Z [RouterExplorer] info: Mapped {/users, POST} route
+2024-03-13T22:21:32.860Z [RouterExplorer] info: Mapped {/users/:userId/status, PUT} route
+2024-03-13T22:21:32.860Z [RouterExplorer] info: Mapped {/users/:userId/password, PUT} route
+2024-03-13T22:21:32.861Z [RouterExplorer] info: Mapped {/users/:userId/activities, PATCH} route
+2024-03-13T22:21:32.861Z [RoutesResolver] info: UserController {/user}:
+2024-03-13T22:21:32.861Z [RouterExplorer] info: Mapped {/user, GET} route
+2024-03-13T22:21:32.861Z [RouterExplorer] info: Mapped {/user/timesheet-events, GET} route
+2024-03-13T22:21:32.861Z [RouterExplorer] info: Mapped {/user/timesheet-events, POST} route
+2024-03-13T22:21:32.861Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, PUT} route
+2024-03-13T22:21:32.861Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, DELETE} route
+2024-03-13T22:21:32.861Z [RouterExplorer] info: Mapped {/user/work-summaries, GET} route
+2024-03-13T22:21:32.861Z [RouterExplorer] info: Mapped {/user/work-summaries, POST} route
+2024-03-13T22:21:32.861Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, PATCH} route
+2024-03-13T22:21:32.861Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, DELETE} route
+2024-03-13T22:21:32.861Z [RouterExplorer] info: Mapped {/user/password, PUT} route
+2024-03-13T22:21:32.863Z [RoutesResolver] info: MiningHardwaresController {/mining-hardwares}:
+2024-03-13T22:21:32.870Z [RouterExplorer] info: Mapped {/mining-hardwares, GET} route
+2024-03-13T22:21:32.870Z [RouterExplorer] info: Mapped {/mining-hardwares, POST} route
+2024-03-13T22:21:32.870Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, PATCH} route
+2024-03-13T22:21:32.871Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, DELETE} route
+2024-03-13T22:21:32.871Z [NestApplication] info: Nest application successfully started
+2024-03-13T22:29:44.774Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T22:38:33.511Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T22:51:29.283Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T22:53:18.720Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T22:53:23.545Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T22:53:48.931Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T22:55:56.376Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T22:56:12.362Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T22:58:57.355Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T22:59:06.325Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T22:59:14.797Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T22:59:16.839Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T22:59:37.376Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T22:59:41.883Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T22:59:50.036Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T22:59:58.315Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T22:59:58.479Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T23:00:08.196Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T23:01:11.305Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T23:01:18.641Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T23:01:20.709Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T23:01:58.339Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T23:01:58.606Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T23:02:09.626Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T23:02:45.591Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T23:04:19.052Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-13T23:05:00.459Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-13T23:06:28.067Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T23:06:51.972Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T23:06:54.728Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T23:13:22.771Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-13T23:14:01.056Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-13T23:14:01.397Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T23:19:58.674Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T23:43:24.632Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T23:45:48.372Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T23:45:49.564Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T23:46:35.492Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T23:47:44.176Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T23:47:46.811Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-13T23:47:46.856Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T23:47:49.265Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-13T23:47:49.540Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-13T23:47:52.500Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:15:20.009Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:15:22.227Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:15:24.678Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:31:03.263Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:36:35.038Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:36:39.140Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:36:50.272Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:36:57.208Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:37:16.354Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:37:20.052Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:37:23.711Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-14T00:37:23.884Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:37:29.500Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:37:50.768Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:38:01.514Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:38:35.488Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:38:58.655Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:39:10.002Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:41:05.080Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:42:11.056Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:42:15.830Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:42:56.546Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-14T00:42:56.670Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:43:01.372Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:43:12.581Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:43:13.688Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:43:30.783Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:43:35.672Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:43:39.677Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-14T00:43:39.837Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:43:41.603Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:43:56.621Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:43:59.419Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-14T00:43:59.550Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:44:02.220Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:44:59.420Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:45:03.190Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-14T00:45:03.296Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:45:05.095Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:45:39.464Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:46:14.065Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:46:33.578Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:46:37.496Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-14T00:46:37.607Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:46:39.190Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:46:40.999Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:46:41.981Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:46:43.197Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:46:43.931Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:46:45.018Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:46:45.663Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:46:46.840Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:46:47.554Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:46:48.120Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:46:48.768Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:46:49.510Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:46:50.196Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:46:56.640Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:46:59.203Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:47:00.295Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:47:02.589Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:47:03.835Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:47:04.664Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:47:45.874Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:49:56.660Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:49:58.986Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T00:55:20.540Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T01:05:48.556Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T01:05:52.567Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T01:05:58.575Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T01:06:07.526Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T01:06:14.527Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T01:06:18.252Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T01:06:24.056Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-14T01:06:24.204Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T01:06:52.496Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T03:27:16.387Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T03:27:17.058Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-14T03:27:17.379Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-14T03:27:17.445Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-14T03:27:18.321Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T03:27:36.895Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T03:27:45.902Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T03:27:54.754Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T03:27:57.159Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T03:28:00.884Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T03:28:01.131Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T03:28:02.180Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T03:28:03.056Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T03:34:05.698Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T03:34:52.744Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T03:35:29.032Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T03:36:28.361Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T03:37:41.260Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T03:37:59.073Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T03:42:28.202Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T03:44:09.695Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T03:44:44.656Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T03:44:45.002Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T03:46:36.368Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T03:48:08.344Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T03:48:09.275Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T03:48:10.454Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T03:48:10.537Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T03:49:59.991Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T03:51:01.361Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-14T03:51:01.721Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T03:51:18.574Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T03:51:41.370Z [HTTP] info: POST /mining-hardwares; body: {"name":"wakoko","location":"timang","hashRate":"1234"} - 201, Created
+2024-03-14T03:52:54.701Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-14T03:57:53.179Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T03:59:34.773Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:00:40.558Z [HTTP] info: POST /mining-hardwares; body: {"name":"bebeang","location":"aaaa","hashRate":"222222"} - 201, Created
+2024-03-14T04:01:00.097Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-14T04:01:00.227Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-14T04:01:02.875Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:02:37.921Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-14T04:02:38.074Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-14T04:02:39.979Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:02:46.868Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:03:20.399Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:03:25.044Z [HTTP] info: POST /mining-hardwares; body: {"name":"aaa","location":"aaaa","hashRate":"2"} - 201, Created
+2024-03-14T04:03:27.477Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-14T04:03:29.448Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:03:30.315Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:03:31.278Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:03:46.383Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:04:17.194Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:04:18.170Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:04:19.185Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:04:20.389Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:04:21.037Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:04:21.687Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:04:22.416Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:04:23.157Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:04:23.838Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:04:25.625Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:04:26.051Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:07:16.967Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:07:24.744Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:07:43.887Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:07:50.642Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:08:07.717Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:08:44.452Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:08:55.074Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-14T04:08:55.258Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:11:05.798Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:11:19.631Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:11:38.609Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:12:21.943Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:14:03.758Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:16:57.984Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:17:14.061Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:17:17.883Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:17:21.306Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:17:25.799Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:17:28.417Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:17:29.532Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:17:55.903Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-14T04:17:56.358Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-14T04:18:27.275Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-14T04:18:27.538Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:18:37.233Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:18:45.364Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified
+2024-03-14T04:18:46.844Z [HTTP] info: GET /mining-hardwares; body: {} - 304, Not Modified

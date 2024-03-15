@@ -1,0 +1,21 @@
+2024-03-10T23:54:22.254Z [HTTP] error: GET /mining-hardwares; body: {} - 401, Unauthorized; Unauthorized
+2024-03-11T02:32:22.637Z [HTTP] error: GET /mining-hardwares; body: {} - 401, Unauthorized; Unauthorized
+2024-03-11T02:34:09.537Z [HTTP] error: POST /mining-hardwares; body: {"name":"AAAAA","location":"AAAAAMining Facility B","hashRate":"AAAAAAA72.51441805891815 TH/S"} - 403, Forbidden; User's role is not 'admin'
+2024-03-11T02:35:53.300Z [HTTP] error: POST /mining-hardwares; body: {"name":"AAAAA","location":"AAAAAMining Facility B","hashRate":"AAAAAAA72.51441805891815 TH/S"} - 403, Forbidden; User's role is not 'admin'
+2024-03-11T02:43:25.433Z [HTTP] error: POST /mining-hardwares; body: {"name":"AAAAA","location":"AAAAAMining Facility B","hashRate":"AAAAAAA72.51441805891815 TH/S"} - 403, Forbidden; User's role is not 'admin'
+2024-03-11T02:43:27.831Z [HTTP] error: POST /mining-hardwares; body: {"name":"AAAAA","location":"AAAAAMining Facility B","hashRate":"AAAAAAA72.51441805891815 TH/S"} - 403, Forbidden; User's role is not 'admin'
+2024-03-11T02:44:30.399Z [ExceptionsHandler] error: MiningHardwareRecord validation failed: id: Path `id` is required. (ValidationError: MiningHardwareRecord validation failed: id: Path `id` is required.
+    at model.Document.invalidate (/Users/home/projects/MINE/node_modules/mongoose/lib/document.js:3166:32)
+    at /Users/home/projects/MINE/node_modules/mongoose/lib/document.js:2959:17
+    at /Users/home/projects/MINE/node_modules/mongoose/lib/schematype.js:1368:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11))
+2024-03-11T02:44:30.404Z [HTTP] error: POST /mining-hardwares; body: {"name":"AAAAA","location":"AAAAAMining Facility B","hashRate":"AAAAAAA72.51441805891815 TH/S"} - 500, Internal Server Error; Internal server error
+2024-03-11T02:48:21.142Z [ExceptionsHandler] error: MiningHardwareRecord validation failed: id: Path `id` is required. (ValidationError: MiningHardwareRecord validation failed: id: Path `id` is required.
+    at model.Document.invalidate (/Users/home/projects/MINE/node_modules/mongoose/lib/document.js:3166:32)
+    at /Users/home/projects/MINE/node_modules/mongoose/lib/document.js:2959:17
+    at /Users/home/projects/MINE/node_modules/mongoose/lib/schematype.js:1368:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11))
+2024-03-11T02:48:21.145Z [HTTP] error: POST /mining-hardwares; body: {"name":"AAAAA","location":"AAAAAMining Facility B","hashRate":"AAAAAAA72.51441805891815 TH/S"} - 500, Internal Server Error; Internal server error
+2024-03-11T03:06:38.408Z [HTTP] error: POST /feature-flags; body: {"key":"aaaaaaaaaa","value":true,"environment":"dev"} - 401, Unauthorized; Unauthorized
+2024-03-11T03:06:42.534Z [HTTP] error: POST /feature-flags; body: {"key":"aaaaaaaaaa","value":true,"environment":"dev"} - 401, Unauthorized; Unauthorized
+2024-03-11T03:41:59.253Z [HTTP] error: GET /mining-hardwares; body: {} - 404, Not Found; Cannot GET /mining-hardwares

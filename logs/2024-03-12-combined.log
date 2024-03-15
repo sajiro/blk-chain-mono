@@ -1,0 +1,107 @@
+2024-03-12T21:09:10.011Z [NestFactory] info: Starting Nest application...
+2024-03-12T21:09:10.013Z [InstanceLoader] info: AppModule dependencies initialized
+2024-03-12T21:09:10.013Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-12T21:09:10.014Z [InstanceLoader] info: ConfigHostModule dependencies initialized
+2024-03-12T21:09:10.014Z [InstanceLoader] info: ConfigModule dependencies initialized
+2024-03-12T21:09:10.014Z [InstanceLoader] info: JwtModule dependencies initialized
+2024-03-12T21:09:10.014Z [InstanceLoader] info: HealthModule dependencies initialized
+2024-03-12T21:09:10.015Z [InstanceLoader] info: WinstonModule dependencies initialized
+2024-03-12T21:09:10.015Z [InstanceLoader] info: MongooseCoreModule dependencies initialized
+2024-03-12T21:09:10.015Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-12T21:09:10.016Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-12T21:09:10.016Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-12T21:09:10.017Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-12T21:09:10.017Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-12T21:09:10.017Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-12T21:09:10.018Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-12T21:09:10.018Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-12T21:09:10.018Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-12T21:09:10.020Z [InstanceLoader] info: FeatureFlagsModule dependencies initialized
+2024-03-12T21:09:10.020Z [InstanceLoader] info: MiningHardwaresModule dependencies initialized
+2024-03-12T21:09:10.020Z [InstanceLoader] info: ClientsModule dependencies initialized
+2024-03-12T21:09:10.020Z [InstanceLoader] info: AuthModule dependencies initialized
+2024-03-12T21:09:10.021Z [InstanceLoader] info: ProjectsModule dependencies initialized
+2024-03-12T21:09:10.021Z [InstanceLoader] info: UserModule dependencies initialized
+2024-03-12T21:09:10.021Z [InstanceLoader] info: ActivitiesModule dependencies initialized
+2024-03-12T21:09:10.021Z [InstanceLoader] info: UsersModule dependencies initialized
+2024-03-12T21:09:10.021Z [InstanceLoader] info: ReportsModule dependencies initialized
+2024-03-12T21:09:10.021Z [RoutesResolver] info: ActivitiesController {/activities}:
+2024-03-12T21:09:10.022Z [RouterExplorer] info: Mapped {/activities, GET} route
+2024-03-12T21:09:10.022Z [RouterExplorer] info: Mapped {/activities, POST} route
+2024-03-12T21:09:10.022Z [RouterExplorer] info: Mapped {/activities/:activityId, PATCH} route
+2024-03-12T21:09:10.022Z [RouterExplorer] info: Mapped {/activities/:activityId, DELETE} route
+2024-03-12T21:09:10.022Z [RoutesResolver] info: AuthController {/auth}:
+2024-03-12T21:09:10.023Z [RouterExplorer] info: Mapped {/auth/login, POST} route
+2024-03-12T21:09:10.023Z [RouterExplorer] info: Mapped {/auth/refresh, POST} route
+2024-03-12T21:09:10.023Z [RouterExplorer] info: Mapped {/auth/logout, POST} route
+2024-03-12T21:09:10.023Z [RoutesResolver] info: ProjectsController {/projects}:
+2024-03-12T21:09:10.023Z [RouterExplorer] info: Mapped {/projects, GET} route
+2024-03-12T21:09:10.024Z [RouterExplorer] info: Mapped {/projects, POST} route
+2024-03-12T21:09:10.024Z [RouterExplorer] info: Mapped {/projects/:projectId, PATCH} route
+2024-03-12T21:09:10.024Z [RouterExplorer] info: Mapped {/projects/:projectId, DELETE} route
+2024-03-12T21:09:10.024Z [RoutesResolver] info: ClientsController {/clients}:
+2024-03-12T21:09:10.024Z [RouterExplorer] info: Mapped {/clients, GET} route
+2024-03-12T21:09:10.024Z [RouterExplorer] info: Mapped {/clients, POST} route
+2024-03-12T21:09:10.024Z [RouterExplorer] info: Mapped {/clients/:clientId, PATCH} route
+2024-03-12T21:09:10.024Z [RouterExplorer] info: Mapped {/clients/:clientId, DELETE} route
+2024-03-12T21:09:10.024Z [RoutesResolver] info: FeatureFlagsController {/feature-flags}:
+2024-03-12T21:09:10.026Z [RouterExplorer] info: Mapped {/feature-flags, GET} route
+2024-03-12T21:09:10.026Z [RouterExplorer] info: Mapped {/feature-flags, POST} route
+2024-03-12T21:09:10.026Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, PATCH} route
+2024-03-12T21:09:10.026Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, DELETE} route
+2024-03-12T21:09:10.026Z [RoutesResolver] info: HealthController {/health}:
+2024-03-12T21:09:10.026Z [RouterExplorer] info: Mapped {/health/hello, GET} route
+2024-03-12T21:09:10.026Z [RoutesResolver] info: ReportsController {/reports}:
+2024-03-12T21:09:10.026Z [RouterExplorer] info: Mapped {/reports/timesheet-summaries, GET} route
+2024-03-12T21:09:10.026Z [RoutesResolver] info: UsersController {/users}:
+2024-03-12T21:09:10.026Z [RouterExplorer] info: Mapped {/users, GET} route
+2024-03-12T21:09:10.027Z [RouterExplorer] info: Mapped {/users/:userId, GET} route
+2024-03-12T21:09:10.027Z [RouterExplorer] info: Mapped {/users, POST} route
+2024-03-12T21:09:10.027Z [RouterExplorer] info: Mapped {/users/:userId/status, PUT} route
+2024-03-12T21:09:10.027Z [RouterExplorer] info: Mapped {/users/:userId/password, PUT} route
+2024-03-12T21:09:10.027Z [RouterExplorer] info: Mapped {/users/:userId/activities, PATCH} route
+2024-03-12T21:09:10.027Z [RoutesResolver] info: UserController {/user}:
+2024-03-12T21:09:10.027Z [RouterExplorer] info: Mapped {/user, GET} route
+2024-03-12T21:09:10.027Z [RouterExplorer] info: Mapped {/user/timesheet-events, GET} route
+2024-03-12T21:09:10.027Z [RouterExplorer] info: Mapped {/user/timesheet-events, POST} route
+2024-03-12T21:09:10.027Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, PUT} route
+2024-03-12T21:09:10.029Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, DELETE} route
+2024-03-12T21:09:10.029Z [RouterExplorer] info: Mapped {/user/work-summaries, GET} route
+2024-03-12T21:09:10.029Z [RouterExplorer] info: Mapped {/user/work-summaries, POST} route
+2024-03-12T21:09:10.029Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, PATCH} route
+2024-03-12T21:09:10.029Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, DELETE} route
+2024-03-12T21:09:10.029Z [RouterExplorer] info: Mapped {/user/password, PUT} route
+2024-03-12T21:09:10.029Z [RoutesResolver] info: MiningHardwaresController {/mining-hardwares}:
+2024-03-12T21:09:10.029Z [RouterExplorer] info: Mapped {/mining-hardwares, GET} route
+2024-03-12T21:09:10.029Z [RouterExplorer] info: Mapped {/mining-hardwares, POST} route
+2024-03-12T21:09:10.030Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, PATCH} route
+2024-03-12T21:09:10.030Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, DELETE} route
+2024-03-12T21:09:10.030Z [NestApplication] info: Nest application successfully started
+2024-03-12T21:32:02.365Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-12T21:33:55.455Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-12T21:34:03.244Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-12T21:36:38.184Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-12T23:27:34.576Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-12T23:27:49.403Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-12T23:28:07.326Z [HTTP] error: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 401, Unauthorized; Unauthorized
+2024-03-12T23:28:12.911Z [HTTP] error: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 401, Unauthorized; Unauthorized
+2024-03-12T23:28:16.078Z [HTTP] error: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 401, Unauthorized; Unauthorized
+2024-03-12T23:28:19.038Z [HTTP] error: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 401, Unauthorized; Unauthorized
+2024-03-12T23:28:24.512Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-12T23:36:38.411Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-12T23:37:21.433Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-12T23:53:14.719Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-12T23:55:29.969Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-12T23:57:24.643Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-12T23:57:36.011Z [HTTP] error: POST /auth/login; body: {"email":"erwinr@orbitaltech.comaaa","password":"*****"} - 401, Unauthorized; Unauthorized
+2024-03-12T23:57:37.166Z [HTTP] error: POST /auth/login; body: {"email":"erwinr@orbitaltech.comaaa","password":"*****"} - 401, Unauthorized; Unauthorized
+2024-03-12T23:57:37.660Z [HTTP] error: POST /auth/login; body: {"email":"erwinr@orbitaltech.comaaa","password":"*****"} - 401, Unauthorized; Unauthorized
+2024-03-12T23:57:38.776Z [HTTP] error: POST /auth/login; body: {"email":"erwinr@orbitaltech.comaaa","password":"*****"} - 401, Unauthorized; Unauthorized
+2024-03-12T23:57:38.877Z [HTTP] error: POST /auth/login; body: {"email":"erwinr@orbitaltech.comaaa","password":"*****"} - 401, Unauthorized; Unauthorized
+2024-03-12T23:57:42.526Z [HTTP] error: POST /auth/login; body: {"email":"erwinr@orbitaltech.comaaa","password":"*****"} - 401, Unauthorized; Unauthorized
+2024-03-12T23:57:46.509Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-13T00:01:39.934Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-13T00:03:20.881Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-13T01:03:20.960Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-13T01:05:03.522Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-13T01:15:30.791Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK

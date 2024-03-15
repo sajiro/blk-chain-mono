@@ -1,0 +1,83 @@
+{
+  "extends": ["../../.eslintrc.json"],
+  "ignorePatterns": ["!**/*"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {}
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {}
+    },
+    {
+      "files": ["*.assembler.ts"],
+      "rules": {
+        "@typescript-eslint/naming-convention": [
+          "error",
+          {
+            "format": ["PascalCase"],
+            "selector": "class",
+            "suffix": ["Assembler"]
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.controller.ts"],
+      "rules": {
+        "@typescript-eslint/naming-convention": [
+          "error",
+          {
+            "format": ["PascalCase"],
+            "selector": "class",
+            "suffix": ["Controller"]
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.module.ts"],
+      "rules": {
+        "@typescript-eslint/naming-convention": [
+          "error",
+          {
+            "format": ["PascalCase"],
+            "selector": "class",
+            "suffix": ["Module"]
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.schema.ts"],
+      "rules": {
+        "@typescript-eslint/naming-convention": [
+          "error",
+          {
+            "format": ["PascalCase"],
+            "selector": "class",
+            "suffix": ["Record"]
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.service.ts"],
+      "rules": {
+        "@typescript-eslint/naming-convention": [
+          "error",
+          {
+            "format": ["PascalCase"],
+            "selector": "class",
+            "suffix": ["Service"]
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "rules": {}
+    }
+  ]
+}

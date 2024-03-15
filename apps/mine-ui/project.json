@@ -1,0 +1,8 @@
+{
+  "name": "mine-ui",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/mine-ui/src",
+  "projectType": "application",
+  "targets": {},
+  "tags": []
+}

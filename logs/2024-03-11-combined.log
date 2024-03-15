@@ -1,0 +1,1335 @@
+2024-03-11T15:45:39.506Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-11T15:46:02.514Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T15:47:33.708Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T15:53:05.239Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T15:54:03.129Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T16:19:45.552Z [NestFactory] info: Starting Nest application...
+2024-03-11T16:19:45.557Z [InstanceLoader] info: AppModule dependencies initialized
+2024-03-11T16:19:45.558Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T16:19:45.558Z [InstanceLoader] info: ConfigHostModule dependencies initialized
+2024-03-11T16:19:45.561Z [InstanceLoader] info: ConfigModule dependencies initialized
+2024-03-11T16:19:45.573Z [InstanceLoader] info: JwtModule dependencies initialized
+2024-03-11T16:19:45.576Z [InstanceLoader] info: HealthModule dependencies initialized
+2024-03-11T16:19:45.590Z [InstanceLoader] info: WinstonModule dependencies initialized
+2024-03-11T16:19:45.590Z [InstanceLoader] info: MongooseCoreModule dependencies initialized
+2024-03-11T16:19:45.593Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T16:19:45.593Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T16:19:45.594Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T16:19:45.601Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T16:19:45.601Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T16:19:45.605Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T16:19:45.609Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T16:19:45.609Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T16:19:45.609Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T16:19:45.610Z [InstanceLoader] info: FeatureFlagsModule dependencies initialized
+2024-03-11T16:19:45.610Z [InstanceLoader] info: MiningHardwaresModule dependencies initialized
+2024-03-11T16:19:45.611Z [InstanceLoader] info: ClientsModule dependencies initialized
+2024-03-11T16:19:45.612Z [InstanceLoader] info: AuthModule dependencies initialized
+2024-03-11T16:19:45.673Z [InstanceLoader] info: ProjectsModule dependencies initialized
+2024-03-11T16:19:45.674Z [InstanceLoader] info: UserModule dependencies initialized
+2024-03-11T16:19:45.674Z [InstanceLoader] info: ActivitiesModule dependencies initialized
+2024-03-11T16:19:45.674Z [InstanceLoader] info: UsersModule dependencies initialized
+2024-03-11T16:19:45.674Z [InstanceLoader] info: ReportsModule dependencies initialized
+2024-03-11T16:19:45.675Z [RoutesResolver] info: ActivitiesController {/activities}:
+2024-03-11T16:19:45.675Z [RouterExplorer] info: Mapped {/activities, GET} route
+2024-03-11T16:19:45.675Z [RouterExplorer] info: Mapped {/activities, POST} route
+2024-03-11T16:19:45.675Z [RouterExplorer] info: Mapped {/activities/:activityId, PATCH} route
+2024-03-11T16:19:45.675Z [RouterExplorer] info: Mapped {/activities/:activityId, DELETE} route
+2024-03-11T16:19:45.675Z [RoutesResolver] info: AuthController {/auth}:
+2024-03-11T16:19:45.675Z [RouterExplorer] info: Mapped {/auth/login, POST} route
+2024-03-11T16:19:45.675Z [RouterExplorer] info: Mapped {/auth/refresh, POST} route
+2024-03-11T16:19:45.676Z [RouterExplorer] info: Mapped {/auth/logout, POST} route
+2024-03-11T16:19:45.676Z [RoutesResolver] info: ProjectsController {/projects}:
+2024-03-11T16:19:45.676Z [RouterExplorer] info: Mapped {/projects, GET} route
+2024-03-11T16:19:45.676Z [RouterExplorer] info: Mapped {/projects, POST} route
+2024-03-11T16:19:45.676Z [RouterExplorer] info: Mapped {/projects/:projectId, PATCH} route
+2024-03-11T16:19:45.676Z [RouterExplorer] info: Mapped {/projects/:projectId, DELETE} route
+2024-03-11T16:19:45.676Z [RoutesResolver] info: ClientsController {/clients}:
+2024-03-11T16:19:45.677Z [RouterExplorer] info: Mapped {/clients, GET} route
+2024-03-11T16:19:45.685Z [RouterExplorer] info: Mapped {/clients, POST} route
+2024-03-11T16:19:45.689Z [RouterExplorer] info: Mapped {/clients/:clientId, PATCH} route
+2024-03-11T16:19:45.689Z [RouterExplorer] info: Mapped {/clients/:clientId, DELETE} route
+2024-03-11T16:19:45.689Z [RoutesResolver] info: FeatureFlagsController {/feature-flags}:
+2024-03-11T16:19:45.689Z [RouterExplorer] info: Mapped {/feature-flags, GET} route
+2024-03-11T16:19:45.691Z [RouterExplorer] info: Mapped {/feature-flags, POST} route
+2024-03-11T16:19:45.691Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, PATCH} route
+2024-03-11T16:19:45.691Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, DELETE} route
+2024-03-11T16:19:45.691Z [RoutesResolver] info: HealthController {/health}:
+2024-03-11T16:19:45.691Z [RouterExplorer] info: Mapped {/health/hello, GET} route
+2024-03-11T16:19:45.691Z [RoutesResolver] info: ReportsController {/reports}:
+2024-03-11T16:19:45.691Z [RouterExplorer] info: Mapped {/reports/timesheet-summaries, GET} route
+2024-03-11T16:19:45.691Z [RoutesResolver] info: UsersController {/users}:
+2024-03-11T16:19:45.692Z [RouterExplorer] info: Mapped {/users, GET} route
+2024-03-11T16:19:45.692Z [RouterExplorer] info: Mapped {/users/:userId, GET} route
+2024-03-11T16:19:45.692Z [RouterExplorer] info: Mapped {/users, POST} route
+2024-03-11T16:19:45.692Z [RouterExplorer] info: Mapped {/users/:userId/status, PUT} route
+2024-03-11T16:19:45.692Z [RouterExplorer] info: Mapped {/users/:userId/password, PUT} route
+2024-03-11T16:19:45.692Z [RouterExplorer] info: Mapped {/users/:userId/activities, PATCH} route
+2024-03-11T16:19:45.692Z [RoutesResolver] info: UserController {/user}:
+2024-03-11T16:19:45.692Z [RouterExplorer] info: Mapped {/user, GET} route
+2024-03-11T16:19:45.692Z [RouterExplorer] info: Mapped {/user/timesheet-events, GET} route
+2024-03-11T16:19:45.701Z [RouterExplorer] info: Mapped {/user/timesheet-events, POST} route
+2024-03-11T16:19:45.705Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, PUT} route
+2024-03-11T16:19:45.708Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, DELETE} route
+2024-03-11T16:19:45.709Z [RouterExplorer] info: Mapped {/user/work-summaries, GET} route
+2024-03-11T16:19:45.709Z [RouterExplorer] info: Mapped {/user/work-summaries, POST} route
+2024-03-11T16:19:45.709Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, PATCH} route
+2024-03-11T16:19:45.709Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, DELETE} route
+2024-03-11T16:19:45.709Z [RouterExplorer] info: Mapped {/user/password, PUT} route
+2024-03-11T16:19:45.709Z [RoutesResolver] info: MiningHardwaresController {/mining-hardwares}:
+2024-03-11T16:19:45.710Z [RouterExplorer] info: Mapped {/mining-hardwares, GET} route
+2024-03-11T16:19:45.710Z [RouterExplorer] info: Mapped {/mining-hardwares, POST} route
+2024-03-11T16:19:45.710Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, PATCH} route
+2024-03-11T16:19:45.710Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, DELETE} route
+2024-03-11T16:19:45.710Z [NestApplication] info: Nest application successfully started
+2024-03-11T16:20:55.526Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T16:22:27.813Z [NestFactory] info: Starting Nest application...
+2024-03-11T16:22:27.817Z [InstanceLoader] info: AppModule dependencies initialized
+2024-03-11T16:22:27.818Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T16:22:27.818Z [InstanceLoader] info: ConfigHostModule dependencies initialized
+2024-03-11T16:22:27.818Z [InstanceLoader] info: ConfigModule dependencies initialized
+2024-03-11T16:22:27.820Z [InstanceLoader] info: JwtModule dependencies initialized
+2024-03-11T16:22:27.820Z [InstanceLoader] info: HealthModule dependencies initialized
+2024-03-11T16:22:27.820Z [InstanceLoader] info: WinstonModule dependencies initialized
+2024-03-11T16:22:27.821Z [InstanceLoader] info: MongooseCoreModule dependencies initialized
+2024-03-11T16:22:27.821Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T16:22:27.822Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T16:22:27.822Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T16:22:27.823Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T16:22:27.823Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T16:22:27.824Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T16:22:27.824Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T16:22:27.824Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T16:22:27.825Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T16:22:27.825Z [InstanceLoader] info: FeatureFlagsModule dependencies initialized
+2024-03-11T16:22:27.825Z [InstanceLoader] info: MiningHardwaresModule dependencies initialized
+2024-03-11T16:22:27.825Z [InstanceLoader] info: ClientsModule dependencies initialized
+2024-03-11T16:22:27.825Z [InstanceLoader] info: AuthModule dependencies initialized
+2024-03-11T16:22:27.826Z [InstanceLoader] info: ProjectsModule dependencies initialized
+2024-03-11T16:22:27.826Z [InstanceLoader] info: UserModule dependencies initialized
+2024-03-11T16:22:27.826Z [InstanceLoader] info: ActivitiesModule dependencies initialized
+2024-03-11T16:22:27.826Z [InstanceLoader] info: UsersModule dependencies initialized
+2024-03-11T16:22:27.827Z [InstanceLoader] info: ReportsModule dependencies initialized
+2024-03-11T16:22:27.827Z [RoutesResolver] info: ActivitiesController {/activities}:
+2024-03-11T16:22:27.827Z [RouterExplorer] info: Mapped {/activities, GET} route
+2024-03-11T16:22:27.828Z [RouterExplorer] info: Mapped {/activities, POST} route
+2024-03-11T16:22:27.830Z [RouterExplorer] info: Mapped {/activities/:activityId, PATCH} route
+2024-03-11T16:22:27.830Z [RouterExplorer] info: Mapped {/activities/:activityId, DELETE} route
+2024-03-11T16:22:27.830Z [RoutesResolver] info: AuthController {/auth}:
+2024-03-11T16:22:27.830Z [RouterExplorer] info: Mapped {/auth/login, POST} route
+2024-03-11T16:22:27.831Z [RouterExplorer] info: Mapped {/auth/refresh, POST} route
+2024-03-11T16:22:27.831Z [RouterExplorer] info: Mapped {/auth/logout, POST} route
+2024-03-11T16:22:27.833Z [RoutesResolver] info: ProjectsController {/projects}:
+2024-03-11T16:22:27.833Z [RouterExplorer] info: Mapped {/projects, GET} route
+2024-03-11T16:22:27.833Z [RouterExplorer] info: Mapped {/projects, POST} route
+2024-03-11T16:22:27.833Z [RouterExplorer] info: Mapped {/projects/:projectId, PATCH} route
+2024-03-11T16:22:27.833Z [RouterExplorer] info: Mapped {/projects/:projectId, DELETE} route
+2024-03-11T16:22:27.834Z [RoutesResolver] info: ClientsController {/clients}:
+2024-03-11T16:22:27.834Z [RouterExplorer] info: Mapped {/clients, GET} route
+2024-03-11T16:22:27.834Z [RouterExplorer] info: Mapped {/clients, POST} route
+2024-03-11T16:22:27.835Z [RouterExplorer] info: Mapped {/clients/:clientId, PATCH} route
+2024-03-11T16:22:27.836Z [RouterExplorer] info: Mapped {/clients/:clientId, DELETE} route
+2024-03-11T16:22:27.839Z [RoutesResolver] info: FeatureFlagsController {/feature-flags}:
+2024-03-11T16:22:27.840Z [RouterExplorer] info: Mapped {/feature-flags, GET} route
+2024-03-11T16:22:27.840Z [RouterExplorer] info: Mapped {/feature-flags, POST} route
+2024-03-11T16:22:27.840Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, PATCH} route
+2024-03-11T16:22:27.840Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, DELETE} route
+2024-03-11T16:22:27.841Z [RoutesResolver] info: HealthController {/health}:
+2024-03-11T16:22:27.841Z [RouterExplorer] info: Mapped {/health/hello, GET} route
+2024-03-11T16:22:27.841Z [RoutesResolver] info: ReportsController {/reports}:
+2024-03-11T16:22:27.841Z [RouterExplorer] info: Mapped {/reports/timesheet-summaries, GET} route
+2024-03-11T16:22:27.841Z [RoutesResolver] info: UsersController {/users}:
+2024-03-11T16:22:27.842Z [RouterExplorer] info: Mapped {/users, GET} route
+2024-03-11T16:22:27.842Z [RouterExplorer] info: Mapped {/users/:userId, GET} route
+2024-03-11T16:22:27.842Z [RouterExplorer] info: Mapped {/users, POST} route
+2024-03-11T16:22:27.842Z [RouterExplorer] info: Mapped {/users/:userId/status, PUT} route
+2024-03-11T16:22:27.842Z [RouterExplorer] info: Mapped {/users/:userId/password, PUT} route
+2024-03-11T16:22:27.842Z [RouterExplorer] info: Mapped {/users/:userId/activities, PATCH} route
+2024-03-11T16:22:27.843Z [RoutesResolver] info: UserController {/user}:
+2024-03-11T16:22:27.843Z [RouterExplorer] info: Mapped {/user, GET} route
+2024-03-11T16:22:27.843Z [RouterExplorer] info: Mapped {/user/timesheet-events, GET} route
+2024-03-11T16:22:27.843Z [RouterExplorer] info: Mapped {/user/timesheet-events, POST} route
+2024-03-11T16:22:27.843Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, PUT} route
+2024-03-11T16:22:27.843Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, DELETE} route
+2024-03-11T16:22:27.844Z [RouterExplorer] info: Mapped {/user/work-summaries, GET} route
+2024-03-11T16:22:27.844Z [RouterExplorer] info: Mapped {/user/work-summaries, POST} route
+2024-03-11T16:22:27.844Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, PATCH} route
+2024-03-11T16:22:27.844Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, DELETE} route
+2024-03-11T16:22:27.844Z [RouterExplorer] info: Mapped {/user/password, PUT} route
+2024-03-11T16:22:27.844Z [RoutesResolver] info: MiningHardwaresController {/mining-hardwares}:
+2024-03-11T16:22:27.844Z [RouterExplorer] info: Mapped {/mining-hardwares, GET} route
+2024-03-11T16:22:27.846Z [RouterExplorer] info: Mapped {/mining-hardwares, POST} route
+2024-03-11T16:22:27.846Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, PATCH} route
+2024-03-11T16:22:27.846Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, DELETE} route
+2024-03-11T16:22:27.846Z [NestApplication] info: Nest application successfully started
+2024-03-11T16:23:01.477Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T17:23:32.170Z [NestFactory] info: Starting Nest application...
+2024-03-11T17:23:32.176Z [InstanceLoader] info: AppModule dependencies initialized
+2024-03-11T17:23:32.177Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T17:23:32.177Z [InstanceLoader] info: ConfigHostModule dependencies initialized
+2024-03-11T17:23:32.178Z [InstanceLoader] info: ConfigModule dependencies initialized
+2024-03-11T17:23:32.178Z [InstanceLoader] info: JwtModule dependencies initialized
+2024-03-11T17:23:32.179Z [InstanceLoader] info: HealthModule dependencies initialized
+2024-03-11T17:23:32.179Z [InstanceLoader] info: WinstonModule dependencies initialized
+2024-03-11T17:23:32.179Z [InstanceLoader] info: MongooseCoreModule dependencies initialized
+2024-03-11T17:23:32.180Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T17:23:32.201Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T17:23:32.204Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T17:23:32.244Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T17:23:32.266Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T17:23:32.269Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T17:23:32.270Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T17:23:32.270Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T17:23:32.270Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T17:23:32.271Z [InstanceLoader] info: FeatureFlagsModule dependencies initialized
+2024-03-11T17:23:32.271Z [InstanceLoader] info: MiningHardwaresModule dependencies initialized
+2024-03-11T17:23:32.272Z [InstanceLoader] info: ClientsModule dependencies initialized
+2024-03-11T17:23:32.272Z [InstanceLoader] info: AuthModule dependencies initialized
+2024-03-11T17:23:32.272Z [InstanceLoader] info: ProjectsModule dependencies initialized
+2024-03-11T17:23:32.272Z [InstanceLoader] info: UserModule dependencies initialized
+2024-03-11T17:23:32.272Z [InstanceLoader] info: ActivitiesModule dependencies initialized
+2024-03-11T17:23:32.272Z [InstanceLoader] info: UsersModule dependencies initialized
+2024-03-11T17:23:32.273Z [InstanceLoader] info: ReportsModule dependencies initialized
+2024-03-11T17:23:32.273Z [RoutesResolver] info: ActivitiesController {/activities}:
+2024-03-11T17:23:32.273Z [RouterExplorer] info: Mapped {/activities, GET} route
+2024-03-11T17:23:32.273Z [RouterExplorer] info: Mapped {/activities, POST} route
+2024-03-11T17:23:32.280Z [RouterExplorer] info: Mapped {/activities/:activityId, PATCH} route
+2024-03-11T17:23:32.281Z [RouterExplorer] info: Mapped {/activities/:activityId, DELETE} route
+2024-03-11T17:23:32.284Z [RoutesResolver] info: AuthController {/auth}:
+2024-03-11T17:23:32.284Z [RouterExplorer] info: Mapped {/auth/login, POST} route
+2024-03-11T17:23:32.285Z [RouterExplorer] info: Mapped {/auth/refresh, POST} route
+2024-03-11T17:23:32.285Z [RouterExplorer] info: Mapped {/auth/logout, POST} route
+2024-03-11T17:23:32.285Z [RoutesResolver] info: ProjectsController {/projects}:
+2024-03-11T17:23:32.285Z [RouterExplorer] info: Mapped {/projects, GET} route
+2024-03-11T17:23:32.285Z [RouterExplorer] info: Mapped {/projects, POST} route
+2024-03-11T17:23:32.285Z [RouterExplorer] info: Mapped {/projects/:projectId, PATCH} route
+2024-03-11T17:23:32.285Z [RouterExplorer] info: Mapped {/projects/:projectId, DELETE} route
+2024-03-11T17:23:32.287Z [RoutesResolver] info: ClientsController {/clients}:
+2024-03-11T17:23:32.288Z [RouterExplorer] info: Mapped {/clients, GET} route
+2024-03-11T17:23:32.297Z [RouterExplorer] info: Mapped {/clients, POST} route
+2024-03-11T17:23:32.298Z [RouterExplorer] info: Mapped {/clients/:clientId, PATCH} route
+2024-03-11T17:23:32.298Z [RouterExplorer] info: Mapped {/clients/:clientId, DELETE} route
+2024-03-11T17:23:32.298Z [RoutesResolver] info: FeatureFlagsController {/feature-flags}:
+2024-03-11T17:23:32.298Z [RouterExplorer] info: Mapped {/feature-flags, GET} route
+2024-03-11T17:23:32.299Z [RouterExplorer] info: Mapped {/feature-flags, POST} route
+2024-03-11T17:23:32.299Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, PATCH} route
+2024-03-11T17:23:32.299Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, DELETE} route
+2024-03-11T17:23:32.299Z [RoutesResolver] info: HealthController {/health}:
+2024-03-11T17:23:32.299Z [RouterExplorer] info: Mapped {/health/hello, GET} route
+2024-03-11T17:23:32.299Z [RoutesResolver] info: ReportsController {/reports}:
+2024-03-11T17:23:32.299Z [RouterExplorer] info: Mapped {/reports/timesheet-summaries, GET} route
+2024-03-11T17:23:32.299Z [RoutesResolver] info: UsersController {/users}:
+2024-03-11T17:23:32.299Z [RouterExplorer] info: Mapped {/users, GET} route
+2024-03-11T17:23:32.299Z [RouterExplorer] info: Mapped {/users/:userId, GET} route
+2024-03-11T17:23:32.300Z [RouterExplorer] info: Mapped {/users, POST} route
+2024-03-11T17:23:32.300Z [RouterExplorer] info: Mapped {/users/:userId/status, PUT} route
+2024-03-11T17:23:32.300Z [RouterExplorer] info: Mapped {/users/:userId/password, PUT} route
+2024-03-11T17:23:32.303Z [RouterExplorer] info: Mapped {/users/:userId/activities, PATCH} route
+2024-03-11T17:23:32.304Z [RoutesResolver] info: UserController {/user}:
+2024-03-11T17:23:32.304Z [RouterExplorer] info: Mapped {/user, GET} route
+2024-03-11T17:23:32.304Z [RouterExplorer] info: Mapped {/user/timesheet-events, GET} route
+2024-03-11T17:23:32.304Z [RouterExplorer] info: Mapped {/user/timesheet-events, POST} route
+2024-03-11T17:23:32.304Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, PUT} route
+2024-03-11T17:23:32.304Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, DELETE} route
+2024-03-11T17:23:32.304Z [RouterExplorer] info: Mapped {/user/work-summaries, GET} route
+2024-03-11T17:23:32.304Z [RouterExplorer] info: Mapped {/user/work-summaries, POST} route
+2024-03-11T17:23:32.304Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, PATCH} route
+2024-03-11T17:23:32.305Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, DELETE} route
+2024-03-11T17:23:32.305Z [RouterExplorer] info: Mapped {/user/password, PUT} route
+2024-03-11T17:23:32.305Z [RoutesResolver] info: MiningHardwaresController {/mining-hardwares}:
+2024-03-11T17:23:32.305Z [RouterExplorer] info: Mapped {/mining-hardwares, GET} route
+2024-03-11T17:23:32.305Z [RouterExplorer] info: Mapped {/mining-hardwares, POST} route
+2024-03-11T17:23:32.307Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, PATCH} route
+2024-03-11T17:23:32.315Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, DELETE} route
+2024-03-11T17:23:32.315Z [NestApplication] info: Nest application successfully started
+2024-03-11T17:32:28.852Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T17:39:25.676Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T17:43:34.517Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T17:57:30.693Z [NestFactory] info: Starting Nest application...
+2024-03-11T17:57:30.696Z [InstanceLoader] info: AppModule dependencies initialized
+2024-03-11T17:57:30.696Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T17:57:30.696Z [InstanceLoader] info: ConfigHostModule dependencies initialized
+2024-03-11T17:57:30.697Z [InstanceLoader] info: ConfigModule dependencies initialized
+2024-03-11T17:57:30.697Z [InstanceLoader] info: JwtModule dependencies initialized
+2024-03-11T17:57:30.697Z [InstanceLoader] info: HealthModule dependencies initialized
+2024-03-11T17:57:30.698Z [InstanceLoader] info: WinstonModule dependencies initialized
+2024-03-11T17:57:30.698Z [InstanceLoader] info: MongooseCoreModule dependencies initialized
+2024-03-11T17:57:30.702Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T17:57:30.703Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T17:57:30.705Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T17:57:30.705Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T17:57:30.706Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T17:57:30.706Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T17:57:30.707Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T17:57:30.707Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T17:57:30.710Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T17:57:30.711Z [InstanceLoader] info: FeatureFlagsModule dependencies initialized
+2024-03-11T17:57:30.711Z [InstanceLoader] info: MiningHardwaresModule dependencies initialized
+2024-03-11T17:57:30.711Z [InstanceLoader] info: ClientsModule dependencies initialized
+2024-03-11T17:57:30.711Z [InstanceLoader] info: AuthModule dependencies initialized
+2024-03-11T17:57:30.712Z [InstanceLoader] info: ProjectsModule dependencies initialized
+2024-03-11T17:57:30.712Z [InstanceLoader] info: UserModule dependencies initialized
+2024-03-11T17:57:30.712Z [InstanceLoader] info: ActivitiesModule dependencies initialized
+2024-03-11T17:57:30.712Z [InstanceLoader] info: UsersModule dependencies initialized
+2024-03-11T17:57:30.712Z [InstanceLoader] info: ReportsModule dependencies initialized
+2024-03-11T17:57:30.713Z [RoutesResolver] info: ActivitiesController {/activities}:
+2024-03-11T17:57:30.713Z [RouterExplorer] info: Mapped {/activities, GET} route
+2024-03-11T17:57:30.713Z [RouterExplorer] info: Mapped {/activities, POST} route
+2024-03-11T17:57:30.715Z [RouterExplorer] info: Mapped {/activities/:activityId, PATCH} route
+2024-03-11T17:57:30.719Z [RouterExplorer] info: Mapped {/activities/:activityId, DELETE} route
+2024-03-11T17:57:30.720Z [RoutesResolver] info: AuthController {/auth}:
+2024-03-11T17:57:30.721Z [RouterExplorer] info: Mapped {/auth/login, POST} route
+2024-03-11T17:57:30.721Z [RouterExplorer] info: Mapped {/auth/refresh, POST} route
+2024-03-11T17:57:30.721Z [RouterExplorer] info: Mapped {/auth/logout, POST} route
+2024-03-11T17:57:30.722Z [RoutesResolver] info: ProjectsController {/projects}:
+2024-03-11T17:57:30.722Z [RouterExplorer] info: Mapped {/projects, GET} route
+2024-03-11T17:57:30.722Z [RouterExplorer] info: Mapped {/projects, POST} route
+2024-03-11T17:57:30.722Z [RouterExplorer] info: Mapped {/projects/:projectId, PATCH} route
+2024-03-11T17:57:30.723Z [RouterExplorer] info: Mapped {/projects/:projectId, DELETE} route
+2024-03-11T17:57:30.724Z [RoutesResolver] info: ClientsController {/clients}:
+2024-03-11T17:57:30.727Z [RouterExplorer] info: Mapped {/clients, GET} route
+2024-03-11T17:57:30.728Z [RouterExplorer] info: Mapped {/clients, POST} route
+2024-03-11T17:57:30.728Z [RouterExplorer] info: Mapped {/clients/:clientId, PATCH} route
+2024-03-11T17:57:30.728Z [RouterExplorer] info: Mapped {/clients/:clientId, DELETE} route
+2024-03-11T17:57:30.728Z [RoutesResolver] info: FeatureFlagsController {/feature-flags}:
+2024-03-11T17:57:30.728Z [RouterExplorer] info: Mapped {/feature-flags, GET} route
+2024-03-11T17:57:30.728Z [RouterExplorer] info: Mapped {/feature-flags, POST} route
+2024-03-11T17:57:30.728Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, PATCH} route
+2024-03-11T17:57:30.729Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, DELETE} route
+2024-03-11T17:57:30.729Z [RoutesResolver] info: HealthController {/health}:
+2024-03-11T17:57:30.729Z [RouterExplorer] info: Mapped {/health/hello, GET} route
+2024-03-11T17:57:30.729Z [RoutesResolver] info: ReportsController {/reports}:
+2024-03-11T17:57:30.729Z [RouterExplorer] info: Mapped {/reports/timesheet-summaries, GET} route
+2024-03-11T17:57:30.730Z [RoutesResolver] info: UsersController {/users}:
+2024-03-11T17:57:30.730Z [RouterExplorer] info: Mapped {/users, GET} route
+2024-03-11T17:57:30.730Z [RouterExplorer] info: Mapped {/users/:userId, GET} route
+2024-03-11T17:57:30.730Z [RouterExplorer] info: Mapped {/users, POST} route
+2024-03-11T17:57:30.730Z [RouterExplorer] info: Mapped {/users/:userId/status, PUT} route
+2024-03-11T17:57:30.730Z [RouterExplorer] info: Mapped {/users/:userId/password, PUT} route
+2024-03-11T17:57:30.730Z [RouterExplorer] info: Mapped {/users/:userId/activities, PATCH} route
+2024-03-11T17:57:30.731Z [RoutesResolver] info: UserController {/user}:
+2024-03-11T17:57:30.731Z [RouterExplorer] info: Mapped {/user, GET} route
+2024-03-11T17:57:30.731Z [RouterExplorer] info: Mapped {/user/timesheet-events, GET} route
+2024-03-11T17:57:30.732Z [RouterExplorer] info: Mapped {/user/timesheet-events, POST} route
+2024-03-11T17:57:30.732Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, PUT} route
+2024-03-11T17:57:30.732Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, DELETE} route
+2024-03-11T17:57:30.739Z [RouterExplorer] info: Mapped {/user/work-summaries, GET} route
+2024-03-11T17:57:30.740Z [RouterExplorer] info: Mapped {/user/work-summaries, POST} route
+2024-03-11T17:57:30.740Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, PATCH} route
+2024-03-11T17:57:30.741Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, DELETE} route
+2024-03-11T17:57:30.741Z [RouterExplorer] info: Mapped {/user/password, PUT} route
+2024-03-11T17:57:30.742Z [RoutesResolver] info: MiningHardwaresController {/mining-hardwares}:
+2024-03-11T17:57:30.742Z [RouterExplorer] info: Mapped {/mining-hardwares, GET} route
+2024-03-11T17:57:30.742Z [RouterExplorer] info: Mapped {/mining-hardwares, POST} route
+2024-03-11T17:57:30.743Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, PATCH} route
+2024-03-11T17:57:30.743Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, DELETE} route
+2024-03-11T17:57:30.743Z [NestApplication] info: Nest application successfully started
+2024-03-11T17:58:58.371Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T18:23:28.725Z [NestFactory] info: Starting Nest application...
+2024-03-11T18:23:28.728Z [InstanceLoader] info: AppModule dependencies initialized
+2024-03-11T18:23:28.729Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:23:28.729Z [InstanceLoader] info: ConfigHostModule dependencies initialized
+2024-03-11T18:23:28.729Z [InstanceLoader] info: ConfigModule dependencies initialized
+2024-03-11T18:23:28.730Z [InstanceLoader] info: JwtModule dependencies initialized
+2024-03-11T18:23:28.730Z [InstanceLoader] info: HealthModule dependencies initialized
+2024-03-11T18:23:28.731Z [InstanceLoader] info: WinstonModule dependencies initialized
+2024-03-11T18:23:28.731Z [InstanceLoader] info: MongooseCoreModule dependencies initialized
+2024-03-11T18:23:28.731Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:23:28.732Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:23:28.732Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:23:28.732Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:23:28.733Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:23:28.733Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:23:28.734Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:23:28.735Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:23:28.739Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:23:28.741Z [InstanceLoader] info: FeatureFlagsModule dependencies initialized
+2024-03-11T18:23:28.743Z [InstanceLoader] info: MiningHardwaresModule dependencies initialized
+2024-03-11T18:23:28.744Z [InstanceLoader] info: ClientsModule dependencies initialized
+2024-03-11T18:23:28.747Z [InstanceLoader] info: AuthModule dependencies initialized
+2024-03-11T18:23:28.748Z [InstanceLoader] info: ProjectsModule dependencies initialized
+2024-03-11T18:23:28.748Z [InstanceLoader] info: UserModule dependencies initialized
+2024-03-11T18:23:28.749Z [InstanceLoader] info: ActivitiesModule dependencies initialized
+2024-03-11T18:23:28.750Z [InstanceLoader] info: UsersModule dependencies initialized
+2024-03-11T18:23:28.751Z [InstanceLoader] info: ReportsModule dependencies initialized
+2024-03-11T18:23:28.751Z [RoutesResolver] info: ActivitiesController {/activities}:
+2024-03-11T18:23:28.752Z [RouterExplorer] info: Mapped {/activities, GET} route
+2024-03-11T18:23:28.752Z [RouterExplorer] info: Mapped {/activities, POST} route
+2024-03-11T18:23:28.752Z [RouterExplorer] info: Mapped {/activities/:activityId, PATCH} route
+2024-03-11T18:23:28.752Z [RouterExplorer] info: Mapped {/activities/:activityId, DELETE} route
+2024-03-11T18:23:28.752Z [RoutesResolver] info: AuthController {/auth}:
+2024-03-11T18:23:28.759Z [RouterExplorer] info: Mapped {/auth/login, POST} route
+2024-03-11T18:23:28.760Z [RouterExplorer] info: Mapped {/auth/refresh, POST} route
+2024-03-11T18:23:28.760Z [RouterExplorer] info: Mapped {/auth/logout, POST} route
+2024-03-11T18:23:28.760Z [RoutesResolver] info: ProjectsController {/projects}:
+2024-03-11T18:23:28.760Z [RouterExplorer] info: Mapped {/projects, GET} route
+2024-03-11T18:23:28.762Z [RouterExplorer] info: Mapped {/projects, POST} route
+2024-03-11T18:23:28.762Z [RouterExplorer] info: Mapped {/projects/:projectId, PATCH} route
+2024-03-11T18:23:28.762Z [RouterExplorer] info: Mapped {/projects/:projectId, DELETE} route
+2024-03-11T18:23:28.762Z [RoutesResolver] info: ClientsController {/clients}:
+2024-03-11T18:23:28.762Z [RouterExplorer] info: Mapped {/clients, GET} route
+2024-03-11T18:23:28.770Z [RouterExplorer] info: Mapped {/clients, POST} route
+2024-03-11T18:23:28.773Z [RouterExplorer] info: Mapped {/clients/:clientId, PATCH} route
+2024-03-11T18:23:28.773Z [RouterExplorer] info: Mapped {/clients/:clientId, DELETE} route
+2024-03-11T18:23:28.773Z [RoutesResolver] info: FeatureFlagsController {/feature-flags}:
+2024-03-11T18:23:28.773Z [RouterExplorer] info: Mapped {/feature-flags, GET} route
+2024-03-11T18:23:28.785Z [RouterExplorer] info: Mapped {/feature-flags, POST} route
+2024-03-11T18:23:28.785Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, PATCH} route
+2024-03-11T18:23:28.785Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, DELETE} route
+2024-03-11T18:23:28.785Z [RoutesResolver] info: HealthController {/health}:
+2024-03-11T18:23:28.785Z [RouterExplorer] info: Mapped {/health/hello, GET} route
+2024-03-11T18:23:28.785Z [RoutesResolver] info: ReportsController {/reports}:
+2024-03-11T18:23:28.785Z [RouterExplorer] info: Mapped {/reports/timesheet-summaries, GET} route
+2024-03-11T18:23:28.785Z [RoutesResolver] info: UsersController {/users}:
+2024-03-11T18:23:28.785Z [RouterExplorer] info: Mapped {/users, GET} route
+2024-03-11T18:23:28.785Z [RouterExplorer] info: Mapped {/users/:userId, GET} route
+2024-03-11T18:23:28.802Z [RouterExplorer] info: Mapped {/users, POST} route
+2024-03-11T18:23:28.802Z [RouterExplorer] info: Mapped {/users/:userId/status, PUT} route
+2024-03-11T18:23:28.802Z [RouterExplorer] info: Mapped {/users/:userId/password, PUT} route
+2024-03-11T18:23:28.802Z [RouterExplorer] info: Mapped {/users/:userId/activities, PATCH} route
+2024-03-11T18:23:28.802Z [RoutesResolver] info: UserController {/user}:
+2024-03-11T18:23:28.802Z [RouterExplorer] info: Mapped {/user, GET} route
+2024-03-11T18:23:28.802Z [RouterExplorer] info: Mapped {/user/timesheet-events, GET} route
+2024-03-11T18:23:28.803Z [RouterExplorer] info: Mapped {/user/timesheet-events, POST} route
+2024-03-11T18:23:28.803Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, PUT} route
+2024-03-11T18:23:28.803Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, DELETE} route
+2024-03-11T18:23:28.803Z [RouterExplorer] info: Mapped {/user/work-summaries, GET} route
+2024-03-11T18:23:28.803Z [RouterExplorer] info: Mapped {/user/work-summaries, POST} route
+2024-03-11T18:23:28.803Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, PATCH} route
+2024-03-11T18:23:28.803Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, DELETE} route
+2024-03-11T18:23:28.803Z [RouterExplorer] info: Mapped {/user/password, PUT} route
+2024-03-11T18:23:28.803Z [RoutesResolver] info: MiningHardwaresController {/mining-hardwares}:
+2024-03-11T18:23:28.804Z [RouterExplorer] info: Mapped {/mining-hardwares, GET} route
+2024-03-11T18:23:28.804Z [RouterExplorer] info: Mapped {/mining-hardwares, POST} route
+2024-03-11T18:23:28.804Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, PATCH} route
+2024-03-11T18:23:28.804Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, DELETE} route
+2024-03-11T18:23:28.804Z [NestApplication] info: Nest application successfully started
+2024-03-11T18:23:42.459Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T18:24:46.463Z [NestFactory] info: Starting Nest application...
+2024-03-11T18:24:46.468Z [InstanceLoader] info: AppModule dependencies initialized
+2024-03-11T18:24:46.469Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:24:46.470Z [InstanceLoader] info: ConfigHostModule dependencies initialized
+2024-03-11T18:24:46.470Z [InstanceLoader] info: ConfigModule dependencies initialized
+2024-03-11T18:24:46.471Z [InstanceLoader] info: JwtModule dependencies initialized
+2024-03-11T18:24:46.473Z [InstanceLoader] info: HealthModule dependencies initialized
+2024-03-11T18:24:46.477Z [InstanceLoader] info: WinstonModule dependencies initialized
+2024-03-11T18:24:46.478Z [InstanceLoader] info: MongooseCoreModule dependencies initialized
+2024-03-11T18:24:46.481Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:24:46.482Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:24:46.483Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:24:46.489Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:24:46.641Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:24:46.645Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:24:46.646Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:24:46.646Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:24:46.647Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:24:46.647Z [InstanceLoader] info: FeatureFlagsModule dependencies initialized
+2024-03-11T18:24:46.648Z [InstanceLoader] info: MiningHardwaresModule dependencies initialized
+2024-03-11T18:24:46.649Z [InstanceLoader] info: ClientsModule dependencies initialized
+2024-03-11T18:24:46.649Z [InstanceLoader] info: AuthModule dependencies initialized
+2024-03-11T18:24:46.651Z [InstanceLoader] info: ProjectsModule dependencies initialized
+2024-03-11T18:24:46.727Z [InstanceLoader] info: UserModule dependencies initialized
+2024-03-11T18:24:46.742Z [InstanceLoader] info: ActivitiesModule dependencies initialized
+2024-03-11T18:24:46.743Z [InstanceLoader] info: UsersModule dependencies initialized
+2024-03-11T18:24:46.745Z [InstanceLoader] info: ReportsModule dependencies initialized
+2024-03-11T18:24:46.746Z [RoutesResolver] info: ActivitiesController {/activities}:
+2024-03-11T18:24:46.752Z [RouterExplorer] info: Mapped {/activities, GET} route
+2024-03-11T18:24:46.754Z [RouterExplorer] info: Mapped {/activities, POST} route
+2024-03-11T18:24:46.761Z [RouterExplorer] info: Mapped {/activities/:activityId, PATCH} route
+2024-03-11T18:24:46.762Z [RouterExplorer] info: Mapped {/activities/:activityId, DELETE} route
+2024-03-11T18:24:46.762Z [RoutesResolver] info: AuthController {/auth}:
+2024-03-11T18:24:46.763Z [RouterExplorer] info: Mapped {/auth/login, POST} route
+2024-03-11T18:24:46.763Z [RouterExplorer] info: Mapped {/auth/refresh, POST} route
+2024-03-11T18:24:46.763Z [RouterExplorer] info: Mapped {/auth/logout, POST} route
+2024-03-11T18:24:46.766Z [RoutesResolver] info: ProjectsController {/projects}:
+2024-03-11T18:24:46.770Z [RouterExplorer] info: Mapped {/projects, GET} route
+2024-03-11T18:24:46.794Z [RouterExplorer] info: Mapped {/projects, POST} route
+2024-03-11T18:24:46.795Z [RouterExplorer] info: Mapped {/projects/:projectId, PATCH} route
+2024-03-11T18:24:46.795Z [RouterExplorer] info: Mapped {/projects/:projectId, DELETE} route
+2024-03-11T18:24:46.796Z [RoutesResolver] info: ClientsController {/clients}:
+2024-03-11T18:24:46.796Z [RouterExplorer] info: Mapped {/clients, GET} route
+2024-03-11T18:24:46.796Z [RouterExplorer] info: Mapped {/clients, POST} route
+2024-03-11T18:24:46.797Z [RouterExplorer] info: Mapped {/clients/:clientId, PATCH} route
+2024-03-11T18:24:46.797Z [RouterExplorer] info: Mapped {/clients/:clientId, DELETE} route
+2024-03-11T18:24:46.797Z [RoutesResolver] info: FeatureFlagsController {/feature-flags}:
+2024-03-11T18:24:46.797Z [RouterExplorer] info: Mapped {/feature-flags, GET} route
+2024-03-11T18:24:46.797Z [RouterExplorer] info: Mapped {/feature-flags, POST} route
+2024-03-11T18:24:46.797Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, PATCH} route
+2024-03-11T18:24:46.798Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, DELETE} route
+2024-03-11T18:24:46.798Z [RoutesResolver] info: HealthController {/health}:
+2024-03-11T18:24:46.798Z [RouterExplorer] info: Mapped {/health/hello, GET} route
+2024-03-11T18:24:46.798Z [RoutesResolver] info: ReportsController {/reports}:
+2024-03-11T18:24:46.798Z [RouterExplorer] info: Mapped {/reports/timesheet-summaries, GET} route
+2024-03-11T18:24:46.798Z [RoutesResolver] info: UsersController {/users}:
+2024-03-11T18:24:46.798Z [RouterExplorer] info: Mapped {/users, GET} route
+2024-03-11T18:24:46.798Z [RouterExplorer] info: Mapped {/users/:userId, GET} route
+2024-03-11T18:24:46.798Z [RouterExplorer] info: Mapped {/users, POST} route
+2024-03-11T18:24:46.798Z [RouterExplorer] info: Mapped {/users/:userId/status, PUT} route
+2024-03-11T18:24:46.798Z [RouterExplorer] info: Mapped {/users/:userId/password, PUT} route
+2024-03-11T18:24:46.799Z [RouterExplorer] info: Mapped {/users/:userId/activities, PATCH} route
+2024-03-11T18:24:46.799Z [RoutesResolver] info: UserController {/user}:
+2024-03-11T18:24:46.799Z [RouterExplorer] info: Mapped {/user, GET} route
+2024-03-11T18:24:46.799Z [RouterExplorer] info: Mapped {/user/timesheet-events, GET} route
+2024-03-11T18:24:46.799Z [RouterExplorer] info: Mapped {/user/timesheet-events, POST} route
+2024-03-11T18:24:46.799Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, PUT} route
+2024-03-11T18:24:46.799Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, DELETE} route
+2024-03-11T18:24:46.799Z [RouterExplorer] info: Mapped {/user/work-summaries, GET} route
+2024-03-11T18:24:46.799Z [RouterExplorer] info: Mapped {/user/work-summaries, POST} route
+2024-03-11T18:24:46.799Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, PATCH} route
+2024-03-11T18:24:46.799Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, DELETE} route
+2024-03-11T18:24:46.801Z [RouterExplorer] info: Mapped {/user/password, PUT} route
+2024-03-11T18:24:46.801Z [RoutesResolver] info: MiningHardwaresController {/mining-hardwares}:
+2024-03-11T18:24:46.801Z [RouterExplorer] info: Mapped {/mining-hardwares, GET} route
+2024-03-11T18:24:46.801Z [RouterExplorer] info: Mapped {/mining-hardwares, POST} route
+2024-03-11T18:24:46.801Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, PATCH} route
+2024-03-11T18:24:46.801Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, DELETE} route
+2024-03-11T18:24:46.801Z [NestApplication] info: Nest application successfully started
+2024-03-11T18:27:01.563Z [NestFactory] info: Starting Nest application...
+2024-03-11T18:27:01.565Z [InstanceLoader] info: AppModule dependencies initialized
+2024-03-11T18:27:01.565Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:27:01.565Z [InstanceLoader] info: ConfigHostModule dependencies initialized
+2024-03-11T18:27:01.565Z [InstanceLoader] info: ConfigModule dependencies initialized
+2024-03-11T18:27:01.566Z [InstanceLoader] info: JwtModule dependencies initialized
+2024-03-11T18:27:01.566Z [InstanceLoader] info: HealthModule dependencies initialized
+2024-03-11T18:27:01.566Z [InstanceLoader] info: WinstonModule dependencies initialized
+2024-03-11T18:27:01.566Z [InstanceLoader] info: MongooseCoreModule dependencies initialized
+2024-03-11T18:27:01.567Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:27:01.567Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:27:01.567Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:27:01.568Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:27:01.568Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:27:01.568Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:27:01.568Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:27:01.568Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:27:01.568Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:27:01.568Z [InstanceLoader] info: FeatureFlagsModule dependencies initialized
+2024-03-11T18:27:01.569Z [InstanceLoader] info: MiningHardwaresModule dependencies initialized
+2024-03-11T18:27:01.569Z [InstanceLoader] info: ClientsModule dependencies initialized
+2024-03-11T18:27:01.569Z [InstanceLoader] info: AuthModule dependencies initialized
+2024-03-11T18:27:01.569Z [InstanceLoader] info: ProjectsModule dependencies initialized
+2024-03-11T18:27:01.569Z [InstanceLoader] info: UserModule dependencies initialized
+2024-03-11T18:27:01.569Z [InstanceLoader] info: ActivitiesModule dependencies initialized
+2024-03-11T18:27:01.570Z [InstanceLoader] info: UsersModule dependencies initialized
+2024-03-11T18:27:01.570Z [InstanceLoader] info: ReportsModule dependencies initialized
+2024-03-11T18:27:01.570Z [RoutesResolver] info: ActivitiesController {/activities}:
+2024-03-11T18:27:01.570Z [RouterExplorer] info: Mapped {/activities, GET} route
+2024-03-11T18:27:01.570Z [RouterExplorer] info: Mapped {/activities, POST} route
+2024-03-11T18:27:01.570Z [RouterExplorer] info: Mapped {/activities/:activityId, PATCH} route
+2024-03-11T18:27:01.570Z [RouterExplorer] info: Mapped {/activities/:activityId, DELETE} route
+2024-03-11T18:27:01.570Z [RoutesResolver] info: AuthController {/auth}:
+2024-03-11T18:27:01.570Z [RouterExplorer] info: Mapped {/auth/login, POST} route
+2024-03-11T18:27:01.570Z [RouterExplorer] info: Mapped {/auth/refresh, POST} route
+2024-03-11T18:27:01.570Z [RouterExplorer] info: Mapped {/auth/logout, POST} route
+2024-03-11T18:27:01.571Z [RoutesResolver] info: ProjectsController {/projects}:
+2024-03-11T18:27:01.571Z [RouterExplorer] info: Mapped {/projects, GET} route
+2024-03-11T18:27:01.571Z [RouterExplorer] info: Mapped {/projects, POST} route
+2024-03-11T18:27:01.571Z [RouterExplorer] info: Mapped {/projects/:projectId, PATCH} route
+2024-03-11T18:27:01.571Z [RouterExplorer] info: Mapped {/projects/:projectId, DELETE} route
+2024-03-11T18:27:01.571Z [RoutesResolver] info: ClientsController {/clients}:
+2024-03-11T18:27:01.571Z [RouterExplorer] info: Mapped {/clients, GET} route
+2024-03-11T18:27:01.571Z [RouterExplorer] info: Mapped {/clients, POST} route
+2024-03-11T18:27:01.571Z [RouterExplorer] info: Mapped {/clients/:clientId, PATCH} route
+2024-03-11T18:27:01.571Z [RouterExplorer] info: Mapped {/clients/:clientId, DELETE} route
+2024-03-11T18:27:01.571Z [RoutesResolver] info: FeatureFlagsController {/feature-flags}:
+2024-03-11T18:27:01.572Z [RouterExplorer] info: Mapped {/feature-flags, GET} route
+2024-03-11T18:27:01.574Z [RouterExplorer] info: Mapped {/feature-flags, POST} route
+2024-03-11T18:27:01.575Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, PATCH} route
+2024-03-11T18:27:01.575Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, DELETE} route
+2024-03-11T18:27:01.575Z [RoutesResolver] info: HealthController {/health}:
+2024-03-11T18:27:01.575Z [RouterExplorer] info: Mapped {/health/hello, GET} route
+2024-03-11T18:27:01.575Z [RoutesResolver] info: ReportsController {/reports}:
+2024-03-11T18:27:01.575Z [RouterExplorer] info: Mapped {/reports/timesheet-summaries, GET} route
+2024-03-11T18:27:01.575Z [RoutesResolver] info: UsersController {/users}:
+2024-03-11T18:27:01.575Z [RouterExplorer] info: Mapped {/users, GET} route
+2024-03-11T18:27:01.575Z [RouterExplorer] info: Mapped {/users/:userId, GET} route
+2024-03-11T18:27:01.579Z [RouterExplorer] info: Mapped {/users, POST} route
+2024-03-11T18:27:01.579Z [RouterExplorer] info: Mapped {/users/:userId/status, PUT} route
+2024-03-11T18:27:01.579Z [RouterExplorer] info: Mapped {/users/:userId/password, PUT} route
+2024-03-11T18:27:01.580Z [RouterExplorer] info: Mapped {/users/:userId/activities, PATCH} route
+2024-03-11T18:27:01.580Z [RoutesResolver] info: UserController {/user}:
+2024-03-11T18:27:01.580Z [RouterExplorer] info: Mapped {/user, GET} route
+2024-03-11T18:27:01.580Z [RouterExplorer] info: Mapped {/user/timesheet-events, GET} route
+2024-03-11T18:27:01.580Z [RouterExplorer] info: Mapped {/user/timesheet-events, POST} route
+2024-03-11T18:27:01.580Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, PUT} route
+2024-03-11T18:27:01.581Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, DELETE} route
+2024-03-11T18:27:01.581Z [RouterExplorer] info: Mapped {/user/work-summaries, GET} route
+2024-03-11T18:27:01.581Z [RouterExplorer] info: Mapped {/user/work-summaries, POST} route
+2024-03-11T18:27:01.581Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, PATCH} route
+2024-03-11T18:27:01.581Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, DELETE} route
+2024-03-11T18:27:01.581Z [RouterExplorer] info: Mapped {/user/password, PUT} route
+2024-03-11T18:27:01.582Z [RoutesResolver] info: MiningHardwaresController {/mining-hardwares}:
+2024-03-11T18:27:01.582Z [RouterExplorer] info: Mapped {/mining-hardwares, GET} route
+2024-03-11T18:27:01.582Z [RouterExplorer] info: Mapped {/mining-hardwares, POST} route
+2024-03-11T18:27:01.582Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, PATCH} route
+2024-03-11T18:27:01.582Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, DELETE} route
+2024-03-11T18:27:01.582Z [NestApplication] info: Nest application successfully started
+2024-03-11T18:28:12.151Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T18:31:06.971Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T18:51:42.214Z [NestFactory] info: Starting Nest application...
+2024-03-11T18:51:42.217Z [InstanceLoader] info: AppModule dependencies initialized
+2024-03-11T18:51:42.217Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:51:42.218Z [InstanceLoader] info: ConfigHostModule dependencies initialized
+2024-03-11T18:51:42.219Z [InstanceLoader] info: ConfigModule dependencies initialized
+2024-03-11T18:51:42.220Z [InstanceLoader] info: JwtModule dependencies initialized
+2024-03-11T18:51:42.220Z [InstanceLoader] info: HealthModule dependencies initialized
+2024-03-11T18:51:42.225Z [InstanceLoader] info: WinstonModule dependencies initialized
+2024-03-11T18:51:42.231Z [InstanceLoader] info: MongooseCoreModule dependencies initialized
+2024-03-11T18:51:42.233Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:51:42.233Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:51:42.234Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:51:42.234Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:51:42.234Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:51:42.235Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:51:42.236Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:51:42.241Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:51:42.243Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:51:42.244Z [InstanceLoader] info: FeatureFlagsModule dependencies initialized
+2024-03-11T18:51:42.244Z [InstanceLoader] info: MiningHardwaresModule dependencies initialized
+2024-03-11T18:51:42.244Z [InstanceLoader] info: ClientsModule dependencies initialized
+2024-03-11T18:51:42.245Z [InstanceLoader] info: AuthModule dependencies initialized
+2024-03-11T18:51:42.245Z [InstanceLoader] info: ProjectsModule dependencies initialized
+2024-03-11T18:51:42.245Z [InstanceLoader] info: UserModule dependencies initialized
+2024-03-11T18:51:42.245Z [InstanceLoader] info: ActivitiesModule dependencies initialized
+2024-03-11T18:51:42.246Z [InstanceLoader] info: UsersModule dependencies initialized
+2024-03-11T18:51:42.246Z [InstanceLoader] info: ReportsModule dependencies initialized
+2024-03-11T18:51:42.246Z [RoutesResolver] info: ActivitiesController {/activities}:
+2024-03-11T18:51:42.247Z [RouterExplorer] info: Mapped {/activities, GET} route
+2024-03-11T18:51:42.247Z [RouterExplorer] info: Mapped {/activities, POST} route
+2024-03-11T18:51:42.247Z [RouterExplorer] info: Mapped {/activities/:activityId, PATCH} route
+2024-03-11T18:51:42.248Z [RouterExplorer] info: Mapped {/activities/:activityId, DELETE} route
+2024-03-11T18:51:42.248Z [RoutesResolver] info: AuthController {/auth}:
+2024-03-11T18:51:42.248Z [RouterExplorer] info: Mapped {/auth/login, POST} route
+2024-03-11T18:51:42.249Z [RouterExplorer] info: Mapped {/auth/refresh, POST} route
+2024-03-11T18:51:42.249Z [RouterExplorer] info: Mapped {/auth/logout, POST} route
+2024-03-11T18:51:42.250Z [RoutesResolver] info: ProjectsController {/projects}:
+2024-03-11T18:51:42.250Z [RouterExplorer] info: Mapped {/projects, GET} route
+2024-03-11T18:51:42.250Z [RouterExplorer] info: Mapped {/projects, POST} route
+2024-03-11T18:51:42.250Z [RouterExplorer] info: Mapped {/projects/:projectId, PATCH} route
+2024-03-11T18:51:42.250Z [RouterExplorer] info: Mapped {/projects/:projectId, DELETE} route
+2024-03-11T18:51:42.250Z [RoutesResolver] info: ClientsController {/clients}:
+2024-03-11T18:51:42.251Z [RouterExplorer] info: Mapped {/clients, GET} route
+2024-03-11T18:51:42.251Z [RouterExplorer] info: Mapped {/clients, POST} route
+2024-03-11T18:51:42.251Z [RouterExplorer] info: Mapped {/clients/:clientId, PATCH} route
+2024-03-11T18:51:42.251Z [RouterExplorer] info: Mapped {/clients/:clientId, DELETE} route
+2024-03-11T18:51:42.251Z [RoutesResolver] info: FeatureFlagsController {/feature-flags}:
+2024-03-11T18:51:42.251Z [RouterExplorer] info: Mapped {/feature-flags, GET} route
+2024-03-11T18:51:42.251Z [RouterExplorer] info: Mapped {/feature-flags, POST} route
+2024-03-11T18:51:42.252Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, PATCH} route
+2024-03-11T18:51:42.255Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, DELETE} route
+2024-03-11T18:51:42.255Z [RoutesResolver] info: HealthController {/health}:
+2024-03-11T18:51:42.256Z [RouterExplorer] info: Mapped {/health/hello, GET} route
+2024-03-11T18:51:42.268Z [RoutesResolver] info: ReportsController {/reports}:
+2024-03-11T18:51:42.269Z [RouterExplorer] info: Mapped {/reports/timesheet-summaries, GET} route
+2024-03-11T18:51:42.281Z [RoutesResolver] info: UsersController {/users}:
+2024-03-11T18:51:42.299Z [RouterExplorer] info: Mapped {/users, GET} route
+2024-03-11T18:51:42.302Z [RouterExplorer] info: Mapped {/users/:userId, GET} route
+2024-03-11T18:51:42.303Z [RouterExplorer] info: Mapped {/users, POST} route
+2024-03-11T18:51:42.303Z [RouterExplorer] info: Mapped {/users/:userId/status, PUT} route
+2024-03-11T18:51:42.303Z [RouterExplorer] info: Mapped {/users/:userId/password, PUT} route
+2024-03-11T18:51:42.303Z [RouterExplorer] info: Mapped {/users/:userId/activities, PATCH} route
+2024-03-11T18:51:42.303Z [RoutesResolver] info: UserController {/user}:
+2024-03-11T18:51:42.303Z [RouterExplorer] info: Mapped {/user, GET} route
+2024-03-11T18:51:42.314Z [RouterExplorer] info: Mapped {/user/timesheet-events, GET} route
+2024-03-11T18:51:42.380Z [RouterExplorer] info: Mapped {/user/timesheet-events, POST} route
+2024-03-11T18:51:42.381Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, PUT} route
+2024-03-11T18:51:42.381Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, DELETE} route
+2024-03-11T18:51:42.381Z [RouterExplorer] info: Mapped {/user/work-summaries, GET} route
+2024-03-11T18:51:42.382Z [RouterExplorer] info: Mapped {/user/work-summaries, POST} route
+2024-03-11T18:51:42.382Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, PATCH} route
+2024-03-11T18:51:42.382Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, DELETE} route
+2024-03-11T18:51:42.382Z [RouterExplorer] info: Mapped {/user/password, PUT} route
+2024-03-11T18:51:42.382Z [RoutesResolver] info: MiningHardwaresController {/mining-hardwares}:
+2024-03-11T18:51:42.383Z [RouterExplorer] info: Mapped {/mining-hardwares, GET} route
+2024-03-11T18:51:42.383Z [RouterExplorer] info: Mapped {/mining-hardwares, POST} route
+2024-03-11T18:51:42.383Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, PATCH} route
+2024-03-11T18:51:42.383Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, DELETE} route
+2024-03-11T18:51:42.383Z [NestApplication] info: Nest application successfully started
+2024-03-11T18:51:49.493Z [NestFactory] info: Starting Nest application...
+2024-03-11T18:51:49.495Z [InstanceLoader] info: AppModule dependencies initialized
+2024-03-11T18:51:49.496Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:51:49.496Z [InstanceLoader] info: ConfigHostModule dependencies initialized
+2024-03-11T18:51:49.496Z [InstanceLoader] info: ConfigModule dependencies initialized
+2024-03-11T18:51:49.497Z [InstanceLoader] info: JwtModule dependencies initialized
+2024-03-11T18:51:49.498Z [InstanceLoader] info: HealthModule dependencies initialized
+2024-03-11T18:51:49.498Z [InstanceLoader] info: WinstonModule dependencies initialized
+2024-03-11T18:51:49.498Z [InstanceLoader] info: MongooseCoreModule dependencies initialized
+2024-03-11T18:51:49.499Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:51:49.499Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:51:49.499Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:51:49.500Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:51:49.500Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:51:49.500Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:51:49.502Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:51:49.502Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:51:49.502Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:51:49.503Z [InstanceLoader] info: FeatureFlagsModule dependencies initialized
+2024-03-11T18:51:49.503Z [InstanceLoader] info: MiningHardwaresModule dependencies initialized
+2024-03-11T18:51:49.503Z [InstanceLoader] info: ClientsModule dependencies initialized
+2024-03-11T18:51:49.503Z [InstanceLoader] info: AuthModule dependencies initialized
+2024-03-11T18:51:49.503Z [InstanceLoader] info: ProjectsModule dependencies initialized
+2024-03-11T18:51:49.504Z [InstanceLoader] info: UserModule dependencies initialized
+2024-03-11T18:51:49.504Z [InstanceLoader] info: ActivitiesModule dependencies initialized
+2024-03-11T18:51:49.504Z [InstanceLoader] info: UsersModule dependencies initialized
+2024-03-11T18:51:49.505Z [InstanceLoader] info: ReportsModule dependencies initialized
+2024-03-11T18:51:49.505Z [RoutesResolver] info: ActivitiesController {/activities}:
+2024-03-11T18:51:49.505Z [RouterExplorer] info: Mapped {/activities, GET} route
+2024-03-11T18:51:49.505Z [RouterExplorer] info: Mapped {/activities, POST} route
+2024-03-11T18:51:49.509Z [RouterExplorer] info: Mapped {/activities/:activityId, PATCH} route
+2024-03-11T18:51:49.509Z [RouterExplorer] info: Mapped {/activities/:activityId, DELETE} route
+2024-03-11T18:51:49.510Z [RoutesResolver] info: AuthController {/auth}:
+2024-03-11T18:51:49.510Z [RouterExplorer] info: Mapped {/auth/login, POST} route
+2024-03-11T18:51:49.510Z [RouterExplorer] info: Mapped {/auth/refresh, POST} route
+2024-03-11T18:51:49.511Z [RouterExplorer] info: Mapped {/auth/logout, POST} route
+2024-03-11T18:51:49.511Z [RoutesResolver] info: ProjectsController {/projects}:
+2024-03-11T18:51:49.512Z [RouterExplorer] info: Mapped {/projects, GET} route
+2024-03-11T18:51:49.512Z [RouterExplorer] info: Mapped {/projects, POST} route
+2024-03-11T18:51:49.512Z [RouterExplorer] info: Mapped {/projects/:projectId, PATCH} route
+2024-03-11T18:51:49.512Z [RouterExplorer] info: Mapped {/projects/:projectId, DELETE} route
+2024-03-11T18:51:49.512Z [RoutesResolver] info: ClientsController {/clients}:
+2024-03-11T18:51:49.512Z [RouterExplorer] info: Mapped {/clients, GET} route
+2024-03-11T18:51:49.513Z [RouterExplorer] info: Mapped {/clients, POST} route
+2024-03-11T18:51:49.513Z [RouterExplorer] info: Mapped {/clients/:clientId, PATCH} route
+2024-03-11T18:51:49.513Z [RouterExplorer] info: Mapped {/clients/:clientId, DELETE} route
+2024-03-11T18:51:49.513Z [RoutesResolver] info: FeatureFlagsController {/feature-flags}:
+2024-03-11T18:51:49.514Z [RouterExplorer] info: Mapped {/feature-flags, GET} route
+2024-03-11T18:51:49.514Z [RouterExplorer] info: Mapped {/feature-flags, POST} route
+2024-03-11T18:51:49.514Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, PATCH} route
+2024-03-11T18:51:49.514Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, DELETE} route
+2024-03-11T18:51:49.514Z [RoutesResolver] info: HealthController {/health}:
+2024-03-11T18:51:49.514Z [RouterExplorer] info: Mapped {/health/hello, GET} route
+2024-03-11T18:51:49.514Z [RoutesResolver] info: ReportsController {/reports}:
+2024-03-11T18:51:49.515Z [RouterExplorer] info: Mapped {/reports/timesheet-summaries, GET} route
+2024-03-11T18:51:49.515Z [RoutesResolver] info: UsersController {/users}:
+2024-03-11T18:51:49.515Z [RouterExplorer] info: Mapped {/users, GET} route
+2024-03-11T18:51:49.516Z [RouterExplorer] info: Mapped {/users/:userId, GET} route
+2024-03-11T18:51:49.516Z [RouterExplorer] info: Mapped {/users, POST} route
+2024-03-11T18:51:49.516Z [RouterExplorer] info: Mapped {/users/:userId/status, PUT} route
+2024-03-11T18:51:49.516Z [RouterExplorer] info: Mapped {/users/:userId/password, PUT} route
+2024-03-11T18:51:49.516Z [RouterExplorer] info: Mapped {/users/:userId/activities, PATCH} route
+2024-03-11T18:51:49.517Z [RoutesResolver] info: UserController {/user}:
+2024-03-11T18:51:49.518Z [RouterExplorer] info: Mapped {/user, GET} route
+2024-03-11T18:51:49.518Z [RouterExplorer] info: Mapped {/user/timesheet-events, GET} route
+2024-03-11T18:51:49.518Z [RouterExplorer] info: Mapped {/user/timesheet-events, POST} route
+2024-03-11T18:51:49.518Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, PUT} route
+2024-03-11T18:51:49.526Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, DELETE} route
+2024-03-11T18:51:49.526Z [RouterExplorer] info: Mapped {/user/work-summaries, GET} route
+2024-03-11T18:51:49.527Z [RouterExplorer] info: Mapped {/user/work-summaries, POST} route
+2024-03-11T18:51:49.527Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, PATCH} route
+2024-03-11T18:51:49.527Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, DELETE} route
+2024-03-11T18:51:49.527Z [RouterExplorer] info: Mapped {/user/password, PUT} route
+2024-03-11T18:51:49.528Z [RoutesResolver] info: MiningHardwaresController {/mining-hardwares}:
+2024-03-11T18:51:49.528Z [RouterExplorer] info: Mapped {/mining-hardwares, GET} route
+2024-03-11T18:51:49.528Z [RouterExplorer] info: Mapped {/mining-hardwares, POST} route
+2024-03-11T18:51:49.528Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, PATCH} route
+2024-03-11T18:51:49.529Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, DELETE} route
+2024-03-11T18:51:49.529Z [NestApplication] info: Nest application successfully started
+2024-03-11T18:52:14.608Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T18:52:18.945Z [NestFactory] info: Starting Nest application...
+2024-03-11T18:52:18.947Z [InstanceLoader] info: AppModule dependencies initialized
+2024-03-11T18:52:18.948Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:52:18.948Z [InstanceLoader] info: ConfigHostModule dependencies initialized
+2024-03-11T18:52:18.948Z [InstanceLoader] info: ConfigModule dependencies initialized
+2024-03-11T18:52:18.949Z [InstanceLoader] info: JwtModule dependencies initialized
+2024-03-11T18:52:18.949Z [InstanceLoader] info: HealthModule dependencies initialized
+2024-03-11T18:52:18.949Z [InstanceLoader] info: WinstonModule dependencies initialized
+2024-03-11T18:52:18.949Z [InstanceLoader] info: MongooseCoreModule dependencies initialized
+2024-03-11T18:52:18.951Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:52:18.951Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:52:18.952Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:52:18.952Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:52:18.952Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:52:18.952Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:52:18.952Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:52:18.952Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:52:18.953Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T18:52:18.953Z [InstanceLoader] info: FeatureFlagsModule dependencies initialized
+2024-03-11T18:52:18.954Z [InstanceLoader] info: MiningHardwaresModule dependencies initialized
+2024-03-11T18:52:18.954Z [InstanceLoader] info: ClientsModule dependencies initialized
+2024-03-11T18:52:18.954Z [InstanceLoader] info: AuthModule dependencies initialized
+2024-03-11T18:52:18.954Z [InstanceLoader] info: ProjectsModule dependencies initialized
+2024-03-11T18:52:18.954Z [InstanceLoader] info: UserModule dependencies initialized
+2024-03-11T18:52:18.954Z [InstanceLoader] info: ActivitiesModule dependencies initialized
+2024-03-11T18:52:18.955Z [InstanceLoader] info: UsersModule dependencies initialized
+2024-03-11T18:52:18.955Z [InstanceLoader] info: ReportsModule dependencies initialized
+2024-03-11T18:52:18.955Z [RoutesResolver] info: ActivitiesController {/activities}:
+2024-03-11T18:52:18.955Z [RouterExplorer] info: Mapped {/activities, GET} route
+2024-03-11T18:52:18.955Z [RouterExplorer] info: Mapped {/activities, POST} route
+2024-03-11T18:52:18.955Z [RouterExplorer] info: Mapped {/activities/:activityId, PATCH} route
+2024-03-11T18:52:18.956Z [RouterExplorer] info: Mapped {/activities/:activityId, DELETE} route
+2024-03-11T18:52:18.956Z [RoutesResolver] info: AuthController {/auth}:
+2024-03-11T18:52:18.956Z [RouterExplorer] info: Mapped {/auth/login, POST} route
+2024-03-11T18:52:18.956Z [RouterExplorer] info: Mapped {/auth/refresh, POST} route
+2024-03-11T18:52:18.956Z [RouterExplorer] info: Mapped {/auth/logout, POST} route
+2024-03-11T18:52:18.956Z [RoutesResolver] info: ProjectsController {/projects}:
+2024-03-11T18:52:18.957Z [RouterExplorer] info: Mapped {/projects, GET} route
+2024-03-11T18:52:18.957Z [RouterExplorer] info: Mapped {/projects, POST} route
+2024-03-11T18:52:18.957Z [RouterExplorer] info: Mapped {/projects/:projectId, PATCH} route
+2024-03-11T18:52:18.957Z [RouterExplorer] info: Mapped {/projects/:projectId, DELETE} route
+2024-03-11T18:52:18.958Z [RoutesResolver] info: ClientsController {/clients}:
+2024-03-11T18:52:18.958Z [RouterExplorer] info: Mapped {/clients, GET} route
+2024-03-11T18:52:18.958Z [RouterExplorer] info: Mapped {/clients, POST} route
+2024-03-11T18:52:18.958Z [RouterExplorer] info: Mapped {/clients/:clientId, PATCH} route
+2024-03-11T18:52:18.958Z [RouterExplorer] info: Mapped {/clients/:clientId, DELETE} route
+2024-03-11T18:52:18.959Z [RoutesResolver] info: FeatureFlagsController {/feature-flags}:
+2024-03-11T18:52:18.959Z [RouterExplorer] info: Mapped {/feature-flags, GET} route
+2024-03-11T18:52:18.959Z [RouterExplorer] info: Mapped {/feature-flags, POST} route
+2024-03-11T18:52:18.959Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, PATCH} route
+2024-03-11T18:52:18.959Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, DELETE} route
+2024-03-11T18:52:18.960Z [RoutesResolver] info: HealthController {/health}:
+2024-03-11T18:52:18.960Z [RouterExplorer] info: Mapped {/health/hello, GET} route
+2024-03-11T18:52:18.960Z [RoutesResolver] info: ReportsController {/reports}:
+2024-03-11T18:52:18.961Z [RouterExplorer] info: Mapped {/reports/timesheet-summaries, GET} route
+2024-03-11T18:52:18.961Z [RoutesResolver] info: UsersController {/users}:
+2024-03-11T18:52:18.961Z [RouterExplorer] info: Mapped {/users, GET} route
+2024-03-11T18:52:18.961Z [RouterExplorer] info: Mapped {/users/:userId, GET} route
+2024-03-11T18:52:18.961Z [RouterExplorer] info: Mapped {/users, POST} route
+2024-03-11T18:52:18.961Z [RouterExplorer] info: Mapped {/users/:userId/status, PUT} route
+2024-03-11T18:52:18.961Z [RouterExplorer] info: Mapped {/users/:userId/password, PUT} route
+2024-03-11T18:52:18.964Z [RouterExplorer] info: Mapped {/users/:userId/activities, PATCH} route
+2024-03-11T18:52:18.964Z [RoutesResolver] info: UserController {/user}:
+2024-03-11T18:52:18.965Z [RouterExplorer] info: Mapped {/user, GET} route
+2024-03-11T18:52:18.965Z [RouterExplorer] info: Mapped {/user/timesheet-events, GET} route
+2024-03-11T18:52:18.965Z [RouterExplorer] info: Mapped {/user/timesheet-events, POST} route
+2024-03-11T18:52:18.965Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, PUT} route
+2024-03-11T18:52:18.965Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, DELETE} route
+2024-03-11T18:52:18.965Z [RouterExplorer] info: Mapped {/user/work-summaries, GET} route
+2024-03-11T18:52:18.965Z [RouterExplorer] info: Mapped {/user/work-summaries, POST} route
+2024-03-11T18:52:18.967Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, PATCH} route
+2024-03-11T18:52:18.967Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, DELETE} route
+2024-03-11T18:52:18.968Z [RouterExplorer] info: Mapped {/user/password, PUT} route
+2024-03-11T18:52:18.968Z [RoutesResolver] info: MiningHardwaresController {/mining-hardwares}:
+2024-03-11T18:52:18.968Z [RouterExplorer] info: Mapped {/mining-hardwares, GET} route
+2024-03-11T18:52:18.968Z [RouterExplorer] info: Mapped {/mining-hardwares, POST} route
+2024-03-11T18:52:18.968Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, PATCH} route
+2024-03-11T18:52:18.968Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, DELETE} route
+2024-03-11T18:52:18.968Z [NestApplication] info: Nest application successfully started
+2024-03-11T18:53:04.590Z [HTTP] error: POST /mining-hardwares; body: {"name":"555555","location":"aaa33333aaa","hashRate":"11111"} - 401, Unauthorized; Unauthorized
+2024-03-11T18:53:39.205Z [HTTP] error: POST /mining-hardwares; body: {"name":"555555","location":"aaa33333aaa","hashRate":"11111"} - 401, Unauthorized; Unauthorized
+2024-03-11T18:53:45.416Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-11T18:54:02.481Z [HTTP] info: POST /mining-hardwares; body: {"name":"555555","location":"aaa33333aaa","hashRate":"11111"} - 201, Created
+2024-03-11T18:54:11.723Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T18:58:31.544Z [HTTP] error: POST /mining-hardwares/65ef534a6bfd000330a5e3e7; body: {"name":"2023-08-22"} - 404, Not Found; Cannot POST /mining-hardwares/65ef534a6bfd000330a5e3e7
+2024-03-11T18:58:46.213Z [HTTP] error: PUT /mining-hardwares/65ef534a6bfd000330a5e3e7; body: {"name":"2023-08-22"} - 404, Not Found; Cannot PUT /mining-hardwares/65ef534a6bfd000330a5e3e7
+2024-03-11T18:58:52.968Z [HTTP] error: PATCH /mining-hardwares/65ef534a6bfd000330a5e3e7; body: {"name":"2023-08-22"} - 401, Unauthorized; Unauthorized
+2024-03-11T18:59:03.480Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-11T18:59:24.645Z [HTTP] info: PATCH /mining-hardwares/65ef534a6bfd000330a5e3e7; body: {"name":"2023-08-22"} - 204, No Content
+2024-03-11T18:59:33.697Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T19:00:26.617Z [HTTP] info: PATCH /mining-hardwares/65ef534a6bfd000330a5e3e7; body: {"name":"2023-08-22","location":"aaaa2023-08-22","hashRate":"bbbbbbbbbbb-08-22"} - 204, No Content
+2024-03-11T19:00:35.187Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T19:05:44.807Z [NestFactory] info: Starting Nest application...
+2024-03-11T19:05:45.005Z [InstanceLoader] info: AppModule dependencies initialized
+2024-03-11T19:05:45.006Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T19:05:45.007Z [InstanceLoader] info: ConfigHostModule dependencies initialized
+2024-03-11T19:05:45.007Z [InstanceLoader] info: ConfigModule dependencies initialized
+2024-03-11T19:05:45.008Z [InstanceLoader] info: JwtModule dependencies initialized
+2024-03-11T19:05:45.008Z [InstanceLoader] info: HealthModule dependencies initialized
+2024-03-11T19:05:45.008Z [InstanceLoader] info: WinstonModule dependencies initialized
+2024-03-11T19:05:45.009Z [InstanceLoader] info: MongooseCoreModule dependencies initialized
+2024-03-11T19:05:45.009Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T19:05:45.010Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T19:05:45.011Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T19:05:45.015Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T19:05:45.016Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T19:05:45.030Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T19:05:45.030Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T19:05:45.031Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T19:05:45.031Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T19:05:45.031Z [InstanceLoader] info: FeatureFlagsModule dependencies initialized
+2024-03-11T19:05:45.032Z [InstanceLoader] info: MiningHardwaresModule dependencies initialized
+2024-03-11T19:05:45.032Z [InstanceLoader] info: ClientsModule dependencies initialized
+2024-03-11T19:05:45.032Z [InstanceLoader] info: AuthModule dependencies initialized
+2024-03-11T19:05:45.032Z [InstanceLoader] info: ProjectsModule dependencies initialized
+2024-03-11T19:05:45.033Z [InstanceLoader] info: UserModule dependencies initialized
+2024-03-11T19:05:45.033Z [InstanceLoader] info: ActivitiesModule dependencies initialized
+2024-03-11T19:05:45.033Z [InstanceLoader] info: UsersModule dependencies initialized
+2024-03-11T19:05:45.033Z [InstanceLoader] info: ReportsModule dependencies initialized
+2024-03-11T19:05:45.033Z [RoutesResolver] info: ActivitiesController {/activities}:
+2024-03-11T19:05:45.034Z [RouterExplorer] info: Mapped {/activities, GET} route
+2024-03-11T19:05:45.034Z [RouterExplorer] info: Mapped {/activities, POST} route
+2024-03-11T19:05:45.037Z [RouterExplorer] info: Mapped {/activities/:activityId, PATCH} route
+2024-03-11T19:05:45.038Z [RouterExplorer] info: Mapped {/activities/:activityId, DELETE} route
+2024-03-11T19:05:45.038Z [RoutesResolver] info: AuthController {/auth}:
+2024-03-11T19:05:45.043Z [RouterExplorer] info: Mapped {/auth/login, POST} route
+2024-03-11T19:05:45.043Z [RouterExplorer] info: Mapped {/auth/refresh, POST} route
+2024-03-11T19:05:45.043Z [RouterExplorer] info: Mapped {/auth/logout, POST} route
+2024-03-11T19:05:45.044Z [RoutesResolver] info: ProjectsController {/projects}:
+2024-03-11T19:05:45.048Z [RouterExplorer] info: Mapped {/projects, GET} route
+2024-03-11T19:05:45.048Z [RouterExplorer] info: Mapped {/projects, POST} route
+2024-03-11T19:05:45.048Z [RouterExplorer] info: Mapped {/projects/:projectId, PATCH} route
+2024-03-11T19:05:45.049Z [RouterExplorer] info: Mapped {/projects/:projectId, DELETE} route
+2024-03-11T19:05:45.049Z [RoutesResolver] info: ClientsController {/clients}:
+2024-03-11T19:05:45.049Z [RouterExplorer] info: Mapped {/clients, GET} route
+2024-03-11T19:05:45.049Z [RouterExplorer] info: Mapped {/clients, POST} route
+2024-03-11T19:05:45.050Z [RouterExplorer] info: Mapped {/clients/:clientId, PATCH} route
+2024-03-11T19:05:45.050Z [RouterExplorer] info: Mapped {/clients/:clientId, DELETE} route
+2024-03-11T19:05:45.050Z [RoutesResolver] info: FeatureFlagsController {/feature-flags}:
+2024-03-11T19:05:45.051Z [RouterExplorer] info: Mapped {/feature-flags, GET} route
+2024-03-11T19:05:45.051Z [RouterExplorer] info: Mapped {/feature-flags, POST} route
+2024-03-11T19:05:45.052Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, PATCH} route
+2024-03-11T19:05:45.052Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, DELETE} route
+2024-03-11T19:05:45.052Z [RoutesResolver] info: HealthController {/health}:
+2024-03-11T19:05:45.052Z [RouterExplorer] info: Mapped {/health/hello, GET} route
+2024-03-11T19:05:45.052Z [RoutesResolver] info: ReportsController {/reports}:
+2024-03-11T19:05:45.053Z [RouterExplorer] info: Mapped {/reports/timesheet-summaries, GET} route
+2024-03-11T19:05:45.053Z [RoutesResolver] info: UsersController {/users}:
+2024-03-11T19:05:45.053Z [RouterExplorer] info: Mapped {/users, GET} route
+2024-03-11T19:05:45.053Z [RouterExplorer] info: Mapped {/users/:userId, GET} route
+2024-03-11T19:05:45.054Z [RouterExplorer] info: Mapped {/users, POST} route
+2024-03-11T19:05:45.055Z [RouterExplorer] info: Mapped {/users/:userId/status, PUT} route
+2024-03-11T19:05:45.061Z [RouterExplorer] info: Mapped {/users/:userId/password, PUT} route
+2024-03-11T19:05:45.063Z [RouterExplorer] info: Mapped {/users/:userId/activities, PATCH} route
+2024-03-11T19:05:45.063Z [RoutesResolver] info: UserController {/user}:
+2024-03-11T19:05:45.063Z [RouterExplorer] info: Mapped {/user, GET} route
+2024-03-11T19:05:45.063Z [RouterExplorer] info: Mapped {/user/timesheet-events, GET} route
+2024-03-11T19:05:45.063Z [RouterExplorer] info: Mapped {/user/timesheet-events, POST} route
+2024-03-11T19:05:45.064Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, PUT} route
+2024-03-11T19:05:45.064Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, DELETE} route
+2024-03-11T19:05:45.064Z [RouterExplorer] info: Mapped {/user/work-summaries, GET} route
+2024-03-11T19:05:45.064Z [RouterExplorer] info: Mapped {/user/work-summaries, POST} route
+2024-03-11T19:05:45.064Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, PATCH} route
+2024-03-11T19:05:45.065Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, DELETE} route
+2024-03-11T19:05:45.065Z [RouterExplorer] info: Mapped {/user/password, PUT} route
+2024-03-11T19:05:45.066Z [RoutesResolver] info: MiningHardwaresController {/mining-hardwares}:
+2024-03-11T19:05:45.066Z [RouterExplorer] info: Mapped {/mining-hardwares, GET} route
+2024-03-11T19:05:45.066Z [RouterExplorer] info: Mapped {/mining-hardwares, POST} route
+2024-03-11T19:05:45.066Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, PATCH} route
+2024-03-11T19:05:45.066Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, DELETE} route
+2024-03-11T19:05:45.073Z [NestApplication] info: Nest application successfully started
+2024-03-11T19:13:38.512Z [NestFactory] info: Starting Nest application...
+2024-03-11T19:13:38.518Z [InstanceLoader] info: AppModule dependencies initialized
+2024-03-11T19:13:38.518Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T19:13:38.519Z [InstanceLoader] info: ConfigHostModule dependencies initialized
+2024-03-11T19:13:38.520Z [InstanceLoader] info: ConfigModule dependencies initialized
+2024-03-11T19:13:38.520Z [InstanceLoader] info: JwtModule dependencies initialized
+2024-03-11T19:13:38.521Z [InstanceLoader] info: HealthModule dependencies initialized
+2024-03-11T19:13:38.521Z [InstanceLoader] info: WinstonModule dependencies initialized
+2024-03-11T19:13:38.521Z [InstanceLoader] info: MongooseCoreModule dependencies initialized
+2024-03-11T19:13:38.521Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T19:13:38.522Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T19:13:38.522Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T19:13:38.522Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T19:13:38.522Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T19:13:38.522Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T19:13:38.522Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T19:13:38.522Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T19:13:38.524Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T19:13:38.524Z [InstanceLoader] info: FeatureFlagsModule dependencies initialized
+2024-03-11T19:13:38.524Z [InstanceLoader] info: MiningHardwaresModule dependencies initialized
+2024-03-11T19:13:38.524Z [InstanceLoader] info: ClientsModule dependencies initialized
+2024-03-11T19:13:38.525Z [InstanceLoader] info: AuthModule dependencies initialized
+2024-03-11T19:13:38.525Z [InstanceLoader] info: ProjectsModule dependencies initialized
+2024-03-11T19:13:38.525Z [InstanceLoader] info: UserModule dependencies initialized
+2024-03-11T19:13:38.525Z [InstanceLoader] info: ActivitiesModule dependencies initialized
+2024-03-11T19:13:38.525Z [InstanceLoader] info: UsersModule dependencies initialized
+2024-03-11T19:13:38.525Z [InstanceLoader] info: ReportsModule dependencies initialized
+2024-03-11T19:13:38.525Z [RoutesResolver] info: ActivitiesController {/activities}:
+2024-03-11T19:13:38.525Z [RouterExplorer] info: Mapped {/activities, GET} route
+2024-03-11T19:13:38.525Z [RouterExplorer] info: Mapped {/activities, POST} route
+2024-03-11T19:13:38.526Z [RouterExplorer] info: Mapped {/activities/:activityId, PATCH} route
+2024-03-11T19:13:38.526Z [RouterExplorer] info: Mapped {/activities/:activityId, DELETE} route
+2024-03-11T19:13:38.528Z [RoutesResolver] info: AuthController {/auth}:
+2024-03-11T19:13:38.528Z [RouterExplorer] info: Mapped {/auth/login, POST} route
+2024-03-11T19:13:38.528Z [RouterExplorer] info: Mapped {/auth/refresh, POST} route
+2024-03-11T19:13:38.528Z [RouterExplorer] info: Mapped {/auth/logout, POST} route
+2024-03-11T19:13:38.529Z [RoutesResolver] info: ProjectsController {/projects}:
+2024-03-11T19:13:38.529Z [RouterExplorer] info: Mapped {/projects, GET} route
+2024-03-11T19:13:38.529Z [RouterExplorer] info: Mapped {/projects, POST} route
+2024-03-11T19:13:38.529Z [RouterExplorer] info: Mapped {/projects/:projectId, PATCH} route
+2024-03-11T19:13:38.529Z [RouterExplorer] info: Mapped {/projects/:projectId, DELETE} route
+2024-03-11T19:13:38.529Z [RoutesResolver] info: ClientsController {/clients}:
+2024-03-11T19:13:38.534Z [RouterExplorer] info: Mapped {/clients, GET} route
+2024-03-11T19:13:38.534Z [RouterExplorer] info: Mapped {/clients, POST} route
+2024-03-11T19:13:38.534Z [RouterExplorer] info: Mapped {/clients/:clientId, PATCH} route
+2024-03-11T19:13:38.534Z [RouterExplorer] info: Mapped {/clients/:clientId, DELETE} route
+2024-03-11T19:13:38.534Z [RoutesResolver] info: FeatureFlagsController {/feature-flags}:
+2024-03-11T19:13:38.534Z [RouterExplorer] info: Mapped {/feature-flags, GET} route
+2024-03-11T19:13:38.534Z [RouterExplorer] info: Mapped {/feature-flags, POST} route
+2024-03-11T19:13:38.535Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, PATCH} route
+2024-03-11T19:13:38.535Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, DELETE} route
+2024-03-11T19:13:38.539Z [RoutesResolver] info: HealthController {/health}:
+2024-03-11T19:13:38.540Z [RouterExplorer] info: Mapped {/health/hello, GET} route
+2024-03-11T19:13:38.540Z [RoutesResolver] info: ReportsController {/reports}:
+2024-03-11T19:13:38.540Z [RouterExplorer] info: Mapped {/reports/timesheet-summaries, GET} route
+2024-03-11T19:13:38.540Z [RoutesResolver] info: UsersController {/users}:
+2024-03-11T19:13:38.540Z [RouterExplorer] info: Mapped {/users, GET} route
+2024-03-11T19:13:38.540Z [RouterExplorer] info: Mapped {/users/:userId, GET} route
+2024-03-11T19:13:38.540Z [RouterExplorer] info: Mapped {/users, POST} route
+2024-03-11T19:13:38.540Z [RouterExplorer] info: Mapped {/users/:userId/status, PUT} route
+2024-03-11T19:13:38.540Z [RouterExplorer] info: Mapped {/users/:userId/password, PUT} route
+2024-03-11T19:13:38.543Z [RouterExplorer] info: Mapped {/users/:userId/activities, PATCH} route
+2024-03-11T19:13:38.543Z [RoutesResolver] info: UserController {/user}:
+2024-03-11T19:13:38.543Z [RouterExplorer] info: Mapped {/user, GET} route
+2024-03-11T19:13:38.543Z [RouterExplorer] info: Mapped {/user/timesheet-events, GET} route
+2024-03-11T19:13:38.543Z [RouterExplorer] info: Mapped {/user/timesheet-events, POST} route
+2024-03-11T19:13:38.543Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, PUT} route
+2024-03-11T19:13:38.543Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, DELETE} route
+2024-03-11T19:13:38.544Z [RouterExplorer] info: Mapped {/user/work-summaries, GET} route
+2024-03-11T19:13:38.544Z [RouterExplorer] info: Mapped {/user/work-summaries, POST} route
+2024-03-11T19:13:38.544Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, PATCH} route
+2024-03-11T19:13:38.545Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, DELETE} route
+2024-03-11T19:13:38.546Z [RouterExplorer] info: Mapped {/user/password, PUT} route
+2024-03-11T19:13:38.546Z [RoutesResolver] info: MiningHardwaresController {/mining-hardwares}:
+2024-03-11T19:13:38.546Z [RouterExplorer] info: Mapped {/mining-hardwares, GET} route
+2024-03-11T19:13:38.546Z [RouterExplorer] info: Mapped {/mining-hardwares, POST} route
+2024-03-11T19:13:38.546Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, PATCH} route
+2024-03-11T19:13:38.546Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, DELETE} route
+2024-03-11T19:13:38.546Z [NestApplication] info: Nest application successfully started
+2024-03-11T19:16:25.466Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T19:16:35.585Z [HTTP] info: PATCH /mining-hardwares/65ef534a6bfd000330a5e3e7; body: {"name":"2023-08-22","location":"aaaa2023-08-22","hashRate":"bbbbbbbbbbb-08-22"} - 204, No Content
+2024-03-11T19:16:41.849Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T19:18:32.369Z [HTTP] error: DELETE /user/work-summaries/64efb27e1699f84724fb8438; body: {"summary":"beef aaaa"} - 401, Unauthorized; Unauthorized
+2024-03-11T19:21:45.872Z [HTTP] error: PATCH /user/work-summaries/64efb27e1699f84724fb8438; body: {"summary":"beef aaaa"} - 404, Not Found; Could not find work summary for '64efb27e1699f84724fb8438'
+2024-03-11T19:21:56.143Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T19:22:26.929Z [HTTP] error: DELETE /mining-hardwares/65454b021638da08675bff1d; body: {"date":"2023-08-22","projectId":"646278a5f8e35f057bf00433","summary":"this is summary text"} - 401, Unauthorized; Unauthorized
+2024-03-11T19:23:35.536Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-11T19:24:04.370Z [HTTP] info: DELETE /mining-hardwares/65454b021638da08675bff1d; body: {} - 204, No Content
+2024-03-11T19:24:09.044Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T19:24:17.547Z [HTTP] info: DELETE /mining-hardwares/652efc3c024ba020c12bcaf0; body: {} - 204, No Content
+2024-03-11T19:24:39.537Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T19:24:48.505Z [HTTP] info: DELETE /mining-hardwares/65206d05369be4a065aed169; body: {} - 204, No Content
+2024-03-11T19:24:53.341Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T19:25:11.319Z [NestFactory] info: Starting Nest application...
+2024-03-11T19:25:11.321Z [InstanceLoader] info: AppModule dependencies initialized
+2024-03-11T19:25:11.321Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T19:25:11.321Z [InstanceLoader] info: ConfigHostModule dependencies initialized
+2024-03-11T19:25:11.321Z [InstanceLoader] info: ConfigModule dependencies initialized
+2024-03-11T19:25:11.322Z [InstanceLoader] info: JwtModule dependencies initialized
+2024-03-11T19:25:11.322Z [InstanceLoader] info: HealthModule dependencies initialized
+2024-03-11T19:25:11.322Z [InstanceLoader] info: WinstonModule dependencies initialized
+2024-03-11T19:25:11.323Z [InstanceLoader] info: MongooseCoreModule dependencies initialized
+2024-03-11T19:25:11.323Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T19:25:11.323Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T19:25:11.323Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T19:25:11.323Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T19:25:11.324Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T19:25:11.324Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T19:25:11.324Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T19:25:11.324Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T19:25:11.324Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T19:25:11.324Z [InstanceLoader] info: FeatureFlagsModule dependencies initialized
+2024-03-11T19:25:11.324Z [InstanceLoader] info: MiningHardwaresModule dependencies initialized
+2024-03-11T19:25:11.325Z [InstanceLoader] info: ClientsModule dependencies initialized
+2024-03-11T19:25:11.325Z [InstanceLoader] info: AuthModule dependencies initialized
+2024-03-11T19:25:11.325Z [InstanceLoader] info: ProjectsModule dependencies initialized
+2024-03-11T19:25:11.325Z [InstanceLoader] info: UserModule dependencies initialized
+2024-03-11T19:25:11.325Z [InstanceLoader] info: ActivitiesModule dependencies initialized
+2024-03-11T19:25:11.325Z [InstanceLoader] info: UsersModule dependencies initialized
+2024-03-11T19:25:11.325Z [InstanceLoader] info: ReportsModule dependencies initialized
+2024-03-11T19:25:11.325Z [RoutesResolver] info: ActivitiesController {/activities}:
+2024-03-11T19:25:11.325Z [RouterExplorer] info: Mapped {/activities, GET} route
+2024-03-11T19:25:11.325Z [RouterExplorer] info: Mapped {/activities, POST} route
+2024-03-11T19:25:11.325Z [RouterExplorer] info: Mapped {/activities/:activityId, PATCH} route
+2024-03-11T19:25:11.326Z [RouterExplorer] info: Mapped {/activities/:activityId, DELETE} route
+2024-03-11T19:25:11.326Z [RoutesResolver] info: AuthController {/auth}:
+2024-03-11T19:25:11.326Z [RouterExplorer] info: Mapped {/auth/login, POST} route
+2024-03-11T19:25:11.326Z [RouterExplorer] info: Mapped {/auth/refresh, POST} route
+2024-03-11T19:25:11.326Z [RouterExplorer] info: Mapped {/auth/logout, POST} route
+2024-03-11T19:25:11.326Z [RoutesResolver] info: ProjectsController {/projects}:
+2024-03-11T19:25:11.326Z [RouterExplorer] info: Mapped {/projects, GET} route
+2024-03-11T19:25:11.326Z [RouterExplorer] info: Mapped {/projects, POST} route
+2024-03-11T19:25:11.326Z [RouterExplorer] info: Mapped {/projects/:projectId, PATCH} route
+2024-03-11T19:25:11.327Z [RouterExplorer] info: Mapped {/projects/:projectId, DELETE} route
+2024-03-11T19:25:11.327Z [RoutesResolver] info: ClientsController {/clients}:
+2024-03-11T19:25:11.327Z [RouterExplorer] info: Mapped {/clients, GET} route
+2024-03-11T19:25:11.327Z [RouterExplorer] info: Mapped {/clients, POST} route
+2024-03-11T19:25:11.327Z [RouterExplorer] info: Mapped {/clients/:clientId, PATCH} route
+2024-03-11T19:25:11.333Z [RouterExplorer] info: Mapped {/clients/:clientId, DELETE} route
+2024-03-11T19:25:11.333Z [RoutesResolver] info: FeatureFlagsController {/feature-flags}:
+2024-03-11T19:25:11.333Z [RouterExplorer] info: Mapped {/feature-flags, GET} route
+2024-03-11T19:25:11.333Z [RouterExplorer] info: Mapped {/feature-flags, POST} route
+2024-03-11T19:25:11.334Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, PATCH} route
+2024-03-11T19:25:11.334Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, DELETE} route
+2024-03-11T19:25:11.334Z [RoutesResolver] info: HealthController {/health}:
+2024-03-11T19:25:11.334Z [RouterExplorer] info: Mapped {/health/hello, GET} route
+2024-03-11T19:25:11.334Z [RoutesResolver] info: ReportsController {/reports}:
+2024-03-11T19:25:11.334Z [RouterExplorer] info: Mapped {/reports/timesheet-summaries, GET} route
+2024-03-11T19:25:11.335Z [RoutesResolver] info: UsersController {/users}:
+2024-03-11T19:25:11.335Z [RouterExplorer] info: Mapped {/users, GET} route
+2024-03-11T19:25:11.335Z [RouterExplorer] info: Mapped {/users/:userId, GET} route
+2024-03-11T19:25:11.335Z [RouterExplorer] info: Mapped {/users, POST} route
+2024-03-11T19:25:11.335Z [RouterExplorer] info: Mapped {/users/:userId/status, PUT} route
+2024-03-11T19:25:11.336Z [RouterExplorer] info: Mapped {/users/:userId/password, PUT} route
+2024-03-11T19:25:11.336Z [RouterExplorer] info: Mapped {/users/:userId/activities, PATCH} route
+2024-03-11T19:25:11.336Z [RoutesResolver] info: UserController {/user}:
+2024-03-11T19:25:11.336Z [RouterExplorer] info: Mapped {/user, GET} route
+2024-03-11T19:25:11.336Z [RouterExplorer] info: Mapped {/user/timesheet-events, GET} route
+2024-03-11T19:25:11.338Z [RouterExplorer] info: Mapped {/user/timesheet-events, POST} route
+2024-03-11T19:25:11.338Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, PUT} route
+2024-03-11T19:25:11.338Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, DELETE} route
+2024-03-11T19:25:11.338Z [RouterExplorer] info: Mapped {/user/work-summaries, GET} route
+2024-03-11T19:25:11.338Z [RouterExplorer] info: Mapped {/user/work-summaries, POST} route
+2024-03-11T19:25:11.338Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, PATCH} route
+2024-03-11T19:25:11.338Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, DELETE} route
+2024-03-11T19:25:11.338Z [RouterExplorer] info: Mapped {/user/password, PUT} route
+2024-03-11T19:25:11.338Z [RoutesResolver] info: MiningHardwaresController {/mining-hardwares}:
+2024-03-11T19:25:11.339Z [RouterExplorer] info: Mapped {/mining-hardwares, GET} route
+2024-03-11T19:25:11.339Z [RouterExplorer] info: Mapped {/mining-hardwares, POST} route
+2024-03-11T19:25:11.339Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, PATCH} route
+2024-03-11T19:25:11.339Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, DELETE} route
+2024-03-11T19:25:11.340Z [NestApplication] info: Nest application successfully started
+2024-03-11T19:52:30.019Z [HTTP] error: POST /mining-hardwares; body: {"name":"gggg","location":"ggggggg","hashRate":"11ggggggggg111"} - 401, Unauthorized; Unauthorized
+2024-03-11T19:52:38.690Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-11T19:53:38.032Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T19:53:45.756Z [HTTP] info: POST /mining-hardwares; body: {"name":"gggg","location":"ggggggg","hashRate":"11ggggggggg111"} - 201, Created
+2024-03-11T19:53:56.071Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T21:05:44.782Z [NestFactory] info: Starting Nest application...
+2024-03-11T21:05:44.784Z [InstanceLoader] info: AppModule dependencies initialized
+2024-03-11T21:05:44.784Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T21:05:44.784Z [InstanceLoader] info: ConfigHostModule dependencies initialized
+2024-03-11T21:05:44.785Z [InstanceLoader] info: ConfigModule dependencies initialized
+2024-03-11T21:05:44.785Z [InstanceLoader] info: JwtModule dependencies initialized
+2024-03-11T21:05:44.785Z [InstanceLoader] info: HealthModule dependencies initialized
+2024-03-11T21:05:44.786Z [InstanceLoader] info: WinstonModule dependencies initialized
+2024-03-11T21:05:44.786Z [InstanceLoader] info: MongooseCoreModule dependencies initialized
+2024-03-11T21:05:44.786Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T21:05:44.786Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T21:05:44.787Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T21:05:44.787Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T21:05:44.787Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T21:05:44.787Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T21:05:44.787Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T21:05:44.788Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T21:05:44.788Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T21:05:44.788Z [InstanceLoader] info: FeatureFlagsModule dependencies initialized
+2024-03-11T21:05:44.788Z [InstanceLoader] info: MiningHardwaresModule dependencies initialized
+2024-03-11T21:05:44.788Z [InstanceLoader] info: ClientsModule dependencies initialized
+2024-03-11T21:05:44.788Z [InstanceLoader] info: AuthModule dependencies initialized
+2024-03-11T21:05:44.788Z [InstanceLoader] info: ProjectsModule dependencies initialized
+2024-03-11T21:05:44.788Z [InstanceLoader] info: UserModule dependencies initialized
+2024-03-11T21:05:44.788Z [InstanceLoader] info: ActivitiesModule dependencies initialized
+2024-03-11T21:05:44.789Z [InstanceLoader] info: UsersModule dependencies initialized
+2024-03-11T21:05:44.789Z [InstanceLoader] info: ReportsModule dependencies initialized
+2024-03-11T21:05:44.790Z [RoutesResolver] info: ActivitiesController {/activities}:
+2024-03-11T21:05:44.790Z [RouterExplorer] info: Mapped {/activities, GET} route
+2024-03-11T21:05:44.790Z [RouterExplorer] info: Mapped {/activities, POST} route
+2024-03-11T21:05:44.790Z [RouterExplorer] info: Mapped {/activities/:activityId, PATCH} route
+2024-03-11T21:05:44.790Z [RouterExplorer] info: Mapped {/activities/:activityId, DELETE} route
+2024-03-11T21:05:44.790Z [RoutesResolver] info: AuthController {/auth}:
+2024-03-11T21:05:44.791Z [RouterExplorer] info: Mapped {/auth/login, POST} route
+2024-03-11T21:05:44.791Z [RouterExplorer] info: Mapped {/auth/refresh, POST} route
+2024-03-11T21:05:44.797Z [RouterExplorer] info: Mapped {/auth/logout, POST} route
+2024-03-11T21:05:44.798Z [RoutesResolver] info: ProjectsController {/projects}:
+2024-03-11T21:05:44.798Z [RouterExplorer] info: Mapped {/projects, GET} route
+2024-03-11T21:05:44.798Z [RouterExplorer] info: Mapped {/projects, POST} route
+2024-03-11T21:05:44.798Z [RouterExplorer] info: Mapped {/projects/:projectId, PATCH} route
+2024-03-11T21:05:44.798Z [RouterExplorer] info: Mapped {/projects/:projectId, DELETE} route
+2024-03-11T21:05:44.798Z [RoutesResolver] info: ClientsController {/clients}:
+2024-03-11T21:05:44.798Z [RouterExplorer] info: Mapped {/clients, GET} route
+2024-03-11T21:05:44.798Z [RouterExplorer] info: Mapped {/clients, POST} route
+2024-03-11T21:05:44.798Z [RouterExplorer] info: Mapped {/clients/:clientId, PATCH} route
+2024-03-11T21:05:44.798Z [RouterExplorer] info: Mapped {/clients/:clientId, DELETE} route
+2024-03-11T21:05:44.799Z [RoutesResolver] info: FeatureFlagsController {/feature-flags}:
+2024-03-11T21:05:44.799Z [RouterExplorer] info: Mapped {/feature-flags, GET} route
+2024-03-11T21:05:44.799Z [RouterExplorer] info: Mapped {/feature-flags, POST} route
+2024-03-11T21:05:44.799Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, PATCH} route
+2024-03-11T21:05:44.799Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, DELETE} route
+2024-03-11T21:05:44.799Z [RoutesResolver] info: HealthController {/health}:
+2024-03-11T21:05:44.799Z [RouterExplorer] info: Mapped {/health/hello, GET} route
+2024-03-11T21:05:44.799Z [RoutesResolver] info: ReportsController {/reports}:
+2024-03-11T21:05:44.803Z [RouterExplorer] info: Mapped {/reports/timesheet-summaries, GET} route
+2024-03-11T21:05:44.803Z [RoutesResolver] info: UsersController {/users}:
+2024-03-11T21:05:44.803Z [RouterExplorer] info: Mapped {/users, GET} route
+2024-03-11T21:05:44.803Z [RouterExplorer] info: Mapped {/users/:userId, GET} route
+2024-03-11T21:05:44.803Z [RouterExplorer] info: Mapped {/users, POST} route
+2024-03-11T21:05:44.804Z [RouterExplorer] info: Mapped {/users/:userId/status, PUT} route
+2024-03-11T21:05:44.804Z [RouterExplorer] info: Mapped {/users/:userId/password, PUT} route
+2024-03-11T21:05:44.804Z [RouterExplorer] info: Mapped {/users/:userId/activities, PATCH} route
+2024-03-11T21:05:44.804Z [RoutesResolver] info: UserController {/user}:
+2024-03-11T21:05:44.804Z [RouterExplorer] info: Mapped {/user, GET} route
+2024-03-11T21:05:44.805Z [RouterExplorer] info: Mapped {/user/timesheet-events, GET} route
+2024-03-11T21:05:44.806Z [RouterExplorer] info: Mapped {/user/timesheet-events, POST} route
+2024-03-11T21:05:44.806Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, PUT} route
+2024-03-11T21:05:44.806Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, DELETE} route
+2024-03-11T21:05:44.806Z [RouterExplorer] info: Mapped {/user/work-summaries, GET} route
+2024-03-11T21:05:44.806Z [RouterExplorer] info: Mapped {/user/work-summaries, POST} route
+2024-03-11T21:05:44.806Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, PATCH} route
+2024-03-11T21:05:44.806Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, DELETE} route
+2024-03-11T21:05:44.806Z [RouterExplorer] info: Mapped {/user/password, PUT} route
+2024-03-11T21:05:44.816Z [RoutesResolver] info: MiningHardwaresController {/mining-hardwares}:
+2024-03-11T21:05:44.816Z [RouterExplorer] info: Mapped {/mining-hardwares, GET} route
+2024-03-11T21:05:44.816Z [RouterExplorer] info: Mapped {/mining-hardwares, POST} route
+2024-03-11T21:05:44.816Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, PATCH} route
+2024-03-11T21:05:44.816Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, DELETE} route
+2024-03-11T21:05:44.817Z [NestApplication] info: Nest application successfully started
+2024-03-11T21:40:13.329Z [NestFactory] info: Starting Nest application...
+2024-03-11T21:40:13.331Z [InstanceLoader] info: AppModule dependencies initialized
+2024-03-11T21:40:13.331Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T21:40:13.331Z [InstanceLoader] info: ConfigHostModule dependencies initialized
+2024-03-11T21:40:13.332Z [InstanceLoader] info: ConfigModule dependencies initialized
+2024-03-11T21:40:13.332Z [InstanceLoader] info: JwtModule dependencies initialized
+2024-03-11T21:40:13.332Z [InstanceLoader] info: HealthModule dependencies initialized
+2024-03-11T21:40:13.332Z [InstanceLoader] info: WinstonModule dependencies initialized
+2024-03-11T21:40:13.332Z [InstanceLoader] info: MongooseCoreModule dependencies initialized
+2024-03-11T21:40:13.333Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T21:40:13.333Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T21:40:13.333Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T21:40:13.334Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T21:40:13.334Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T21:40:13.334Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T21:40:13.334Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T21:40:13.335Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T21:40:13.335Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T21:40:13.336Z [InstanceLoader] info: FeatureFlagsModule dependencies initialized
+2024-03-11T21:40:13.336Z [InstanceLoader] info: MiningHardwaresModule dependencies initialized
+2024-03-11T21:40:13.337Z [InstanceLoader] info: ClientsModule dependencies initialized
+2024-03-11T21:40:13.337Z [InstanceLoader] info: AuthModule dependencies initialized
+2024-03-11T21:40:13.337Z [InstanceLoader] info: ProjectsModule dependencies initialized
+2024-03-11T21:40:13.338Z [InstanceLoader] info: UserModule dependencies initialized
+2024-03-11T21:40:13.338Z [InstanceLoader] info: ActivitiesModule dependencies initialized
+2024-03-11T21:40:13.338Z [InstanceLoader] info: UsersModule dependencies initialized
+2024-03-11T21:40:13.338Z [InstanceLoader] info: ReportsModule dependencies initialized
+2024-03-11T21:40:13.338Z [RoutesResolver] info: ActivitiesController {/activities}:
+2024-03-11T21:40:13.338Z [RouterExplorer] info: Mapped {/activities, GET} route
+2024-03-11T21:40:13.338Z [RouterExplorer] info: Mapped {/activities, POST} route
+2024-03-11T21:40:13.339Z [RouterExplorer] info: Mapped {/activities/:activityId, PATCH} route
+2024-03-11T21:40:13.339Z [RouterExplorer] info: Mapped {/activities/:activityId, DELETE} route
+2024-03-11T21:40:13.339Z [RoutesResolver] info: AuthController {/auth}:
+2024-03-11T21:40:13.339Z [RouterExplorer] info: Mapped {/auth/login, POST} route
+2024-03-11T21:40:13.339Z [RouterExplorer] info: Mapped {/auth/refresh, POST} route
+2024-03-11T21:40:13.340Z [RouterExplorer] info: Mapped {/auth/logout, POST} route
+2024-03-11T21:40:13.340Z [RoutesResolver] info: ProjectsController {/projects}:
+2024-03-11T21:40:13.340Z [RouterExplorer] info: Mapped {/projects, GET} route
+2024-03-11T21:40:13.340Z [RouterExplorer] info: Mapped {/projects, POST} route
+2024-03-11T21:40:13.340Z [RouterExplorer] info: Mapped {/projects/:projectId, PATCH} route
+2024-03-11T21:40:13.340Z [RouterExplorer] info: Mapped {/projects/:projectId, DELETE} route
+2024-03-11T21:40:13.340Z [RoutesResolver] info: ClientsController {/clients}:
+2024-03-11T21:40:13.344Z [RouterExplorer] info: Mapped {/clients, GET} route
+2024-03-11T21:40:13.344Z [RouterExplorer] info: Mapped {/clients, POST} route
+2024-03-11T21:40:13.344Z [RouterExplorer] info: Mapped {/clients/:clientId, PATCH} route
+2024-03-11T21:40:13.344Z [RouterExplorer] info: Mapped {/clients/:clientId, DELETE} route
+2024-03-11T21:40:13.344Z [RoutesResolver] info: FeatureFlagsController {/feature-flags}:
+2024-03-11T21:40:13.344Z [RouterExplorer] info: Mapped {/feature-flags, GET} route
+2024-03-11T21:40:13.344Z [RouterExplorer] info: Mapped {/feature-flags, POST} route
+2024-03-11T21:40:13.344Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, PATCH} route
+2024-03-11T21:40:13.344Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, DELETE} route
+2024-03-11T21:40:13.344Z [RoutesResolver] info: HealthController {/health}:
+2024-03-11T21:40:13.352Z [RouterExplorer] info: Mapped {/health/hello, GET} route
+2024-03-11T21:40:13.352Z [RoutesResolver] info: ReportsController {/reports}:
+2024-03-11T21:40:13.352Z [RouterExplorer] info: Mapped {/reports/timesheet-summaries, GET} route
+2024-03-11T21:40:13.352Z [RoutesResolver] info: UsersController {/users}:
+2024-03-11T21:40:13.353Z [RouterExplorer] info: Mapped {/users, GET} route
+2024-03-11T21:40:13.353Z [RouterExplorer] info: Mapped {/users/:userId, GET} route
+2024-03-11T21:40:13.353Z [RouterExplorer] info: Mapped {/users, POST} route
+2024-03-11T21:40:13.353Z [RouterExplorer] info: Mapped {/users/:userId/status, PUT} route
+2024-03-11T21:40:13.353Z [RouterExplorer] info: Mapped {/users/:userId/password, PUT} route
+2024-03-11T21:40:13.354Z [RouterExplorer] info: Mapped {/users/:userId/activities, PATCH} route
+2024-03-11T21:40:13.373Z [RoutesResolver] info: UserController {/user}:
+2024-03-11T21:40:13.373Z [RouterExplorer] info: Mapped {/user, GET} route
+2024-03-11T21:40:13.373Z [RouterExplorer] info: Mapped {/user/timesheet-events, GET} route
+2024-03-11T21:40:13.373Z [RouterExplorer] info: Mapped {/user/timesheet-events, POST} route
+2024-03-11T21:40:13.374Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, PUT} route
+2024-03-11T21:40:13.374Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, DELETE} route
+2024-03-11T21:40:13.374Z [RouterExplorer] info: Mapped {/user/work-summaries, GET} route
+2024-03-11T21:40:13.374Z [RouterExplorer] info: Mapped {/user/work-summaries, POST} route
+2024-03-11T21:40:13.374Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, PATCH} route
+2024-03-11T21:40:13.391Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, DELETE} route
+2024-03-11T21:40:13.391Z [RouterExplorer] info: Mapped {/user/password, PUT} route
+2024-03-11T21:40:13.391Z [RoutesResolver] info: MiningHardwaresController {/mining-hardwares}:
+2024-03-11T21:40:13.391Z [RouterExplorer] info: Mapped {/mining-hardwares, GET} route
+2024-03-11T21:40:13.392Z [RouterExplorer] info: Mapped {/mining-hardwares, POST} route
+2024-03-11T21:40:13.392Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, PATCH} route
+2024-03-11T21:40:13.392Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, DELETE} route
+2024-03-11T21:40:13.394Z [NestApplication] info: Nest application successfully started
+2024-03-11T21:40:21.153Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-11T21:40:38.044Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T21:40:44.792Z [HTTP] info: POST /mining-hardwares; body: {"name":"gggg","location":"ggggggg","hashRate":"11ggggggggg111"} - 201, Created
+2024-03-11T21:40:48.254Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T21:41:00.971Z [HTTP] error: PATCH /user/work-summaries/65ef7a5c68689b538bfb18c2; body: {"summary":"beef aaaa"} - 401, Unauthorized; Unauthorized
+2024-03-11T21:41:10.387Z [HTTP] error: PATCH /user/work-summaries/65ef7a5c68689b538bfb18c2; body: {"summary":"beef aaaa"} - 404, Not Found; Could not find work summary for '65ef7a5c68689b538bfb18c2'
+2024-03-11T21:41:17.461Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T21:41:33.083Z [HTTP] error: DELETE /mining-hardwares/65ef7a5c68689b538bfb18c2; body: {} - 401, Unauthorized; Unauthorized
+2024-03-11T21:41:39.926Z [HTTP] info: DELETE /mining-hardwares/65ef7a5c68689b538bfb18c2; body: {} - 204, No Content
+2024-03-11T21:41:45.276Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T21:42:01.217Z [HTTP] error: PATCH /mining-hardwares/65ef614966edd90fe5f21499; body: {"name":"4545454545","location":"aaaa2023-08-22","hashRate":"bbbbbbbbbbb-08-22"} - 401, Unauthorized; Unauthorized
+2024-03-11T21:42:07.084Z [HTTP] info: PATCH /mining-hardwares/65ef614966edd90fe5f21499; body: {"name":"4545454545","location":"aaaa2023-08-22","hashRate":"bbbbbbbbbbb-08-22"} - 204, No Content
+2024-03-11T21:42:10.971Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T23:04:01.080Z [NestFactory] info: Starting Nest application...
+2024-03-11T23:04:01.085Z [InstanceLoader] info: AppModule dependencies initialized
+2024-03-11T23:04:01.085Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T23:04:01.086Z [InstanceLoader] info: ConfigHostModule dependencies initialized
+2024-03-11T23:04:01.086Z [InstanceLoader] info: ConfigModule dependencies initialized
+2024-03-11T23:04:01.087Z [InstanceLoader] info: JwtModule dependencies initialized
+2024-03-11T23:04:01.087Z [InstanceLoader] info: HealthModule dependencies initialized
+2024-03-11T23:04:01.087Z [InstanceLoader] info: WinstonModule dependencies initialized
+2024-03-11T23:04:01.088Z [InstanceLoader] info: MongooseCoreModule dependencies initialized
+2024-03-11T23:04:01.088Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T23:04:01.089Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T23:04:01.089Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T23:04:01.093Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T23:04:01.093Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T23:04:01.093Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T23:04:01.093Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T23:04:01.094Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T23:04:01.094Z [InstanceLoader] info: MongooseModule dependencies initialized
+2024-03-11T23:04:01.095Z [InstanceLoader] info: FeatureFlagsModule dependencies initialized
+2024-03-11T23:04:01.095Z [InstanceLoader] info: MiningHardwaresModule dependencies initialized
+2024-03-11T23:04:01.099Z [InstanceLoader] info: ClientsModule dependencies initialized
+2024-03-11T23:04:01.099Z [InstanceLoader] info: AuthModule dependencies initialized
+2024-03-11T23:04:01.100Z [InstanceLoader] info: ProjectsModule dependencies initialized
+2024-03-11T23:04:01.100Z [InstanceLoader] info: UserModule dependencies initialized
+2024-03-11T23:04:01.100Z [InstanceLoader] info: ActivitiesModule dependencies initialized
+2024-03-11T23:04:01.100Z [InstanceLoader] info: UsersModule dependencies initialized
+2024-03-11T23:04:01.100Z [InstanceLoader] info: ReportsModule dependencies initialized
+2024-03-11T23:04:01.100Z [RoutesResolver] info: ActivitiesController {/activities}:
+2024-03-11T23:04:01.101Z [RouterExplorer] info: Mapped {/activities, GET} route
+2024-03-11T23:04:01.101Z [RouterExplorer] info: Mapped {/activities, POST} route
+2024-03-11T23:04:01.101Z [RouterExplorer] info: Mapped {/activities/:activityId, PATCH} route
+2024-03-11T23:04:01.112Z [RouterExplorer] info: Mapped {/activities/:activityId, DELETE} route
+2024-03-11T23:04:01.112Z [RoutesResolver] info: AuthController {/auth}:
+2024-03-11T23:04:01.113Z [RouterExplorer] info: Mapped {/auth/login, POST} route
+2024-03-11T23:04:01.113Z [RouterExplorer] info: Mapped {/auth/refresh, POST} route
+2024-03-11T23:04:01.113Z [RouterExplorer] info: Mapped {/auth/logout, POST} route
+2024-03-11T23:04:01.113Z [RoutesResolver] info: ProjectsController {/projects}:
+2024-03-11T23:04:01.114Z [RouterExplorer] info: Mapped {/projects, GET} route
+2024-03-11T23:04:01.114Z [RouterExplorer] info: Mapped {/projects, POST} route
+2024-03-11T23:04:01.115Z [RouterExplorer] info: Mapped {/projects/:projectId, PATCH} route
+2024-03-11T23:04:01.115Z [RouterExplorer] info: Mapped {/projects/:projectId, DELETE} route
+2024-03-11T23:04:01.115Z [RoutesResolver] info: ClientsController {/clients}:
+2024-03-11T23:04:01.116Z [RouterExplorer] info: Mapped {/clients, GET} route
+2024-03-11T23:04:01.121Z [RouterExplorer] info: Mapped {/clients, POST} route
+2024-03-11T23:04:01.126Z [RouterExplorer] info: Mapped {/clients/:clientId, PATCH} route
+2024-03-11T23:04:01.126Z [RouterExplorer] info: Mapped {/clients/:clientId, DELETE} route
+2024-03-11T23:04:01.146Z [RoutesResolver] info: FeatureFlagsController {/feature-flags}:
+2024-03-11T23:04:01.146Z [RouterExplorer] info: Mapped {/feature-flags, GET} route
+2024-03-11T23:04:01.146Z [RouterExplorer] info: Mapped {/feature-flags, POST} route
+2024-03-11T23:04:01.148Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, PATCH} route
+2024-03-11T23:04:01.148Z [RouterExplorer] info: Mapped {/feature-flags/:featureFlagId, DELETE} route
+2024-03-11T23:04:01.158Z [RoutesResolver] info: HealthController {/health}:
+2024-03-11T23:04:01.158Z [RouterExplorer] info: Mapped {/health/hello, GET} route
+2024-03-11T23:04:01.159Z [RoutesResolver] info: ReportsController {/reports}:
+2024-03-11T23:04:01.160Z [RouterExplorer] info: Mapped {/reports/timesheet-summaries, GET} route
+2024-03-11T23:04:01.173Z [RoutesResolver] info: UsersController {/users}:
+2024-03-11T23:04:01.173Z [RouterExplorer] info: Mapped {/users, GET} route
+2024-03-11T23:04:01.174Z [RouterExplorer] info: Mapped {/users/:userId, GET} route
+2024-03-11T23:04:01.174Z [RouterExplorer] info: Mapped {/users, POST} route
+2024-03-11T23:04:01.192Z [RouterExplorer] info: Mapped {/users/:userId/status, PUT} route
+2024-03-11T23:04:01.192Z [RouterExplorer] info: Mapped {/users/:userId/password, PUT} route
+2024-03-11T23:04:01.192Z [RouterExplorer] info: Mapped {/users/:userId/activities, PATCH} route
+2024-03-11T23:04:01.192Z [RoutesResolver] info: UserController {/user}:
+2024-03-11T23:04:01.193Z [RouterExplorer] info: Mapped {/user, GET} route
+2024-03-11T23:04:01.193Z [RouterExplorer] info: Mapped {/user/timesheet-events, GET} route
+2024-03-11T23:04:01.193Z [RouterExplorer] info: Mapped {/user/timesheet-events, POST} route
+2024-03-11T23:04:01.193Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, PUT} route
+2024-03-11T23:04:01.194Z [RouterExplorer] info: Mapped {/user/timesheet-events/:eventId, DELETE} route
+2024-03-11T23:04:01.194Z [RouterExplorer] info: Mapped {/user/work-summaries, GET} route
+2024-03-11T23:04:01.201Z [RouterExplorer] info: Mapped {/user/work-summaries, POST} route
+2024-03-11T23:04:01.201Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, PATCH} route
+2024-03-11T23:04:01.201Z [RouterExplorer] info: Mapped {/user/work-summaries/:workSummaryId, DELETE} route
+2024-03-11T23:04:01.201Z [RouterExplorer] info: Mapped {/user/password, PUT} route
+2024-03-11T23:04:01.201Z [RoutesResolver] info: MiningHardwaresController {/mining-hardwares}:
+2024-03-11T23:04:01.201Z [RouterExplorer] info: Mapped {/mining-hardwares, GET} route
+2024-03-11T23:04:01.201Z [RouterExplorer] info: Mapped {/mining-hardwares, POST} route
+2024-03-11T23:04:01.202Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, PATCH} route
+2024-03-11T23:04:01.202Z [RouterExplorer] info: Mapped {/mining-hardwares/:featureFlagId, DELETE} route
+2024-03-11T23:04:01.202Z [NestApplication] info: Nest application successfully started
+2024-03-11T23:04:19.958Z [HTTP] info: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 200, OK
+2024-03-11T23:04:41.983Z [HTTP] error: GET /user/work-summaries?projectId=646278a5f8e35f057bf00431&startDate=2023-08-21&endDate=2023-08-27; body: {} - 401, Unauthorized; Unauthorized
+2024-03-11T23:05:06.695Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T23:05:14.507Z [HTTP] info: POST /mining-hardwares; body: {"name":"ttttttgggg","location":"ggggggg","hashRate":"11ggggggggg111"} - 201, Created
+2024-03-11T23:05:18.252Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T23:05:47.689Z [HTTP] info: PATCH /mining-hardwares/65ef614966edd90fe5f21499; body: {"name":"65ef8e2a0ec017ad4ef7a0b2","location":"65ef8e2a0ec017ad4ef7a0b2-08-22","hashRate":"65ef8e2a0ec017ad4ef7a0b2bbbbbbbbbbb-08-22"} - 204, No Content
+2024-03-11T23:05:55.941Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T23:06:24.615Z [HTTP] info: DELETE /mining-hardwares/65ef8e2a0ec017ad4ef7a0b2; body: {} - 204, No Content
+2024-03-11T23:06:33.657Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK
+2024-03-11T23:06:50.303Z [HTTP] info: DELETE /mining-hardwares/65ef614966edd90fe5f21499; body: {} - 204, No Content
+2024-03-11T23:06:54.623Z [HTTP] info: GET /mining-hardwares; body: {} - 200, OK

@@ -1,0 +1,14 @@
+2024-03-11T18:53:04.590Z [HTTP] error: POST /mining-hardwares; body: {"name":"555555","location":"aaa33333aaa","hashRate":"11111"} - 401, Unauthorized; Unauthorized
+2024-03-11T18:53:39.205Z [HTTP] error: POST /mining-hardwares; body: {"name":"555555","location":"aaa33333aaa","hashRate":"11111"} - 401, Unauthorized; Unauthorized
+2024-03-11T18:58:31.544Z [HTTP] error: POST /mining-hardwares/65ef534a6bfd000330a5e3e7; body: {"name":"2023-08-22"} - 404, Not Found; Cannot POST /mining-hardwares/65ef534a6bfd000330a5e3e7
+2024-03-11T18:58:46.213Z [HTTP] error: PUT /mining-hardwares/65ef534a6bfd000330a5e3e7; body: {"name":"2023-08-22"} - 404, Not Found; Cannot PUT /mining-hardwares/65ef534a6bfd000330a5e3e7
+2024-03-11T18:58:52.968Z [HTTP] error: PATCH /mining-hardwares/65ef534a6bfd000330a5e3e7; body: {"name":"2023-08-22"} - 401, Unauthorized; Unauthorized
+2024-03-11T19:18:32.369Z [HTTP] error: DELETE /user/work-summaries/64efb27e1699f84724fb8438; body: {"summary":"beef aaaa"} - 401, Unauthorized; Unauthorized
+2024-03-11T19:21:45.872Z [HTTP] error: PATCH /user/work-summaries/64efb27e1699f84724fb8438; body: {"summary":"beef aaaa"} - 404, Not Found; Could not find work summary for '64efb27e1699f84724fb8438'
+2024-03-11T19:22:26.929Z [HTTP] error: DELETE /mining-hardwares/65454b021638da08675bff1d; body: {"date":"2023-08-22","projectId":"646278a5f8e35f057bf00433","summary":"this is summary text"} - 401, Unauthorized; Unauthorized
+2024-03-11T19:52:30.019Z [HTTP] error: POST /mining-hardwares; body: {"name":"gggg","location":"ggggggg","hashRate":"11ggggggggg111"} - 401, Unauthorized; Unauthorized
+2024-03-11T21:41:00.971Z [HTTP] error: PATCH /user/work-summaries/65ef7a5c68689b538bfb18c2; body: {"summary":"beef aaaa"} - 401, Unauthorized; Unauthorized
+2024-03-11T21:41:10.387Z [HTTP] error: PATCH /user/work-summaries/65ef7a5c68689b538bfb18c2; body: {"summary":"beef aaaa"} - 404, Not Found; Could not find work summary for '65ef7a5c68689b538bfb18c2'
+2024-03-11T21:41:33.083Z [HTTP] error: DELETE /mining-hardwares/65ef7a5c68689b538bfb18c2; body: {} - 401, Unauthorized; Unauthorized
+2024-03-11T21:42:01.217Z [HTTP] error: PATCH /mining-hardwares/65ef614966edd90fe5f21499; body: {"name":"4545454545","location":"aaaa2023-08-22","hashRate":"bbbbbbbbbbb-08-22"} - 401, Unauthorized; Unauthorized
+2024-03-11T23:04:41.983Z [HTTP] error: GET /user/work-summaries?projectId=646278a5f8e35f057bf00431&startDate=2023-08-21&endDate=2023-08-27; body: {} - 401, Unauthorized; Unauthorized

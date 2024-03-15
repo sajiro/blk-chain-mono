@@ -1,0 +1,42 @@
+2024-03-14T18:46:20.312Z [HTTP] error: PATCH /mining-hardwares; body: {"id":"65f2770d71902b8bec5c0303","name":"AAAAA","location":"65ef8e2a0ec017ad4ef7a0b2-08-22","hashRate":"65ef8e2a0ec017ad4ef7a0b2bbbbbbbbbbb-08-22"} - 404, Not Found; Cannot PATCH /mining-hardwares
+2024-03-14T18:47:11.158Z [HTTP] error: PUT /mining-hardwares; body: {"id":"65f2770d71902b8bec5c0303","name":"1111","location":"65ef8e2a0ec017ad4ef7a0b2-08-22","hashRate":"65ef8e2a0ec017ad4ef7a0b2bbbbbbbbbbb-08-22"} - 404, Not Found; Cannot PUT /mining-hardwares
+2024-03-14T18:48:42.585Z [HTTP] error: PUT /mining-hardwares/65f2770d71902b8bec5c0303; body: {"id":"65f2770d71902b8bec5c0303","name":"123123","location":"65ef8e2a0ec017ad4ef7a0b2-08-22","hashRate":"65ef8e2a0ec017ad4ef7a0b2bbbbbbbbbbb-08-22"} - 404, Not Found; Cannot PUT /mining-hardwares/65f2770d71902b8bec5c0303
+2024-03-14T18:49:24.088Z [HTTP] error: PUT /mining-hardwares/undefined; body: {"name":"11111","location":"65ef8e2a0ec017ad4ef7a0b2-08-22","hashRate":"65ef8e2a0ec017ad4ef7a0b2bbbbbbbbbbb-08-22"} - 404, Not Found; Cannot PUT /mining-hardwares/undefined
+2024-03-14T18:50:31.516Z [HTTP] error: PUT /mining-hardwares/undefined; body: {"name":"aaaaa","location":"65ef8e2a0ec017ad4ef7a0b2-08-22","hashRate":"65ef8e2a0ec017ad4ef7a0b2bbbbbbbbbbb-08-22"} - 404, Not Found; Cannot PUT /mining-hardwares/undefined
+2024-03-14T18:58:52.365Z [HTTP] error: PUT /mining-hardwares/65f2770d71902b8bec5c0303; body: {"name":"aaaa","location":"65ef8e2a0ec017ad4ef7a0b2-08-22","hashRate":"65ef8e2a0ec017ad4ef7a0b2bbbbbbbbbbb-08-22"} - 404, Not Found; Cannot PUT /mining-hardwares/65f2770d71902b8bec5c0303
+2024-03-14T19:37:10.549Z [HTTP] error: DELETE /mining-hardwares/65f232fea2755c5a00f1ef15; body: {} - 404, Not Found; Mining  hardware with id '65f232fea2755c5a00f1ef15' not found
+2024-03-14T19:37:11.185Z [HTTP] error: DELETE /mining-hardwares/65f232fea2755c5a00f1ef15; body: {} - 404, Not Found; Mining  hardware with id '65f232fea2755c5a00f1ef15' not found
+2024-03-14T19:37:11.708Z [HTTP] error: DELETE /mining-hardwares/65f232fea2755c5a00f1ef15; body: {} - 404, Not Found; Mining  hardware with id '65f232fea2755c5a00f1ef15' not found
+2024-03-14T19:37:12.457Z [HTTP] error: DELETE /mining-hardwares/65f232fea2755c5a00f1ef15; body: {} - 404, Not Found; Mining  hardware with id '65f232fea2755c5a00f1ef15' not found
+2024-03-14T19:37:18.955Z [HTTP] error: DELETE /mining-hardwares/65f232fea2755c5a00f1ef11; body: {} - 404, Not Found; Mining  hardware with id '65f232fea2755c5a00f1ef11' not found
+2024-03-14T19:37:19.608Z [HTTP] error: DELETE /mining-hardwares/65f232fea2755c5a00f1ef11; body: {} - 404, Not Found; Mining  hardware with id '65f232fea2755c5a00f1ef11' not found
+2024-03-14T19:37:20.180Z [HTTP] error: DELETE /mining-hardwares/65f232fea2755c5a00f1ef11; body: {} - 404, Not Found; Mining  hardware with id '65f232fea2755c5a00f1ef11' not found
+2024-03-14T19:37:24.918Z [HTTP] error: DELETE /mining-hardwares/65f232fea2755c5a00f1ef11; body: {} - 404, Not Found; Mining  hardware with id '65f232fea2755c5a00f1ef11' not found
+2024-03-14T19:37:25.596Z [HTTP] error: DELETE /mining-hardwares/65f232fea2755c5a00f1ef11; body: {} - 404, Not Found; Mining  hardware with id '65f232fea2755c5a00f1ef11' not found
+2024-03-14T19:37:26.284Z [HTTP] error: DELETE /mining-hardwares/65f232fea2755c5a00f1ef11; body: {} - 404, Not Found; Mining  hardware with id '65f232fea2755c5a00f1ef11' not found
+2024-03-14T19:37:26.939Z [HTTP] error: DELETE /mining-hardwares/65f232fea2755c5a00f1ef11; body: {} - 404, Not Found; Mining  hardware with id '65f232fea2755c5a00f1ef11' not found
+2024-03-14T19:37:27.498Z [HTTP] error: DELETE /mining-hardwares/65f232fea2755c5a00f1ef11; body: {} - 404, Not Found; Mining  hardware with id '65f232fea2755c5a00f1ef11' not found
+2024-03-14T19:37:28.153Z [HTTP] error: DELETE /mining-hardwares/65f232fea2755c5a00f1ef11; body: {} - 404, Not Found; Mining  hardware with id '65f232fea2755c5a00f1ef11' not found
+2024-03-14T19:37:28.639Z [HTTP] error: DELETE /mining-hardwares/65f232fea2755c5a00f1ef11; body: {} - 404, Not Found; Mining  hardware with id '65f232fea2755c5a00f1ef11' not found
+2024-03-14T19:37:29.037Z [HTTP] error: DELETE /mining-hardwares/65f232fea2755c5a00f1ef11; body: {} - 404, Not Found; Mining  hardware with id '65f232fea2755c5a00f1ef11' not found
+2024-03-14T19:37:29.446Z [HTTP] error: DELETE /mining-hardwares/65f232fea2755c5a00f1ef11; body: {} - 404, Not Found; Mining  hardware with id '65f232fea2755c5a00f1ef11' not found
+2024-03-14T19:37:29.889Z [HTTP] error: DELETE /mining-hardwares/65f232fea2755c5a00f1ef11; body: {} - 404, Not Found; Mining  hardware with id '65f232fea2755c5a00f1ef11' not found
+2024-03-15T01:54:38.202Z [HTTP] error: DELETE /mining-hardwares/65f3a88f0be36881331cd8e1; body: {} - 400, Bad Request; miningHardwareId must be a mongodb id
+2024-03-15T01:54:48.623Z [HTTP] error: DELETE /mining-hardwares/65f3a88f0be36881331cd8e1; body: {} - 400, Bad Request; miningHardwareId must be a mongodb id
+2024-03-15T01:55:06.907Z [HTTP] error: DELETE /mining-hardwares/65f3a88f0be36881331cd8e1; body: {} - 400, Bad Request; miningHardwareId must be a mongodb id
+2024-03-15T01:55:37.601Z [HTTP] error: DELETE /mining-hardwares/65f36fd67105faa9a6e8a8ce; body: {} - 400, Bad Request; miningHardwareId must be a mongodb id
+2024-03-15T01:57:37.107Z [HTTP] error: DELETE /mining-hardwares/65f36fd67105faa9a6e8a8ce; body: {} - 400, Bad Request; miningHardwareId must be a mongodb id
+2024-03-15T01:59:05.785Z [HTTP] error: DELETE /mining-hardwares/65f36fd67105faa9a6e8a8ce; body: {} - 400, Bad Request; miningHardwareId must be a mongodb id
+2024-03-15T02:01:41.065Z [HTTP] error: DELETE /mining-hardwares/65f36fd67105faa9a6e8a8ce; body: {} - 400, Bad Request; miningHardwareId must be a mongodb id
+2024-03-15T02:05:53.702Z [HTTP] error: DELETE /mining-hardwares/65f36fd67105faa9a6e8a8ce; body: {} - 401, Unauthorized; Unauthorized
+2024-03-15T02:06:05.153Z [HTTP] error: DELETE /mining-hardwares/65f36fd67105faa9a6e8a8ce; body: {} - 400, Bad Request; miningHardwareId must be a mongodb id
+2024-03-15T02:08:05.066Z [HTTP] error: DELETE /mining-hardwares/65f36fd67105faa9a6e8a8ce; body: {} - 400, Bad Request; miningHardwareId must be a mongodb id
+2024-03-15T02:08:18.903Z [HTTP] error: DELETE /mining-hardwares/65f232fea2755c5a00f1ef73; body: {} - 400, Bad Request; miningHardwareId must be a mongodb id
+2024-03-15T02:09:13.240Z [HTTP] error: DELETE /mining-hardwares/65f3adb6a2755c5a00f1ef86; body: {} - 400, Bad Request; miningHardwareId must be a mongodb id
+2024-03-15T02:56:32.222Z [HTTP] error: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 401, Unauthorized; Unauthorized
+2024-03-15T02:56:33.363Z [HTTP] error: POST /auth/login; body: {"email":"erwinr@orbitaltech.com","password":"*****"} - 401, Unauthorized; Unauthorized
+2024-03-15T03:23:09.536Z [ExceptionsHandler] error: connection <monitor> to 127.0.0.1:27017 timed out (MongoServerSelectionError: connection <monitor> to 127.0.0.1:27017 timed out
+    at Timeout._onTimeout (/Users/home/projects/MINE/node_modules/mongodb/src/sdam/topology.ts:567:30)
+    at listOnTimeout (node:internal/timers:573:17)
+    at processTimers (node:internal/timers:514:7))
+2024-03-15T03:23:09.555Z [HTTP] error: GET /mining-hardwares; body: {} - 500, Internal Server Error; Internal server error
